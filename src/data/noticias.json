@@ -1,10 +1,13 @@
 [
   {
-    "id": "fallback-1",
+    "id": "fallback",
     "titulo": "Síguenos en Instagram",
-    "resumen": "Visita nuestro perfil para ver las últimas noticias",
+    "resumen": "Visita nuestro perfil para ver el contenido",
     "url": "https://www.instagram.com/sentimiento_cordobe/",
-    "fecha": "2026-04-28T10:33:52.444Z",
-    "fuente": "Instagram"
+    "imagen": "",
+    "fecha": "2026-04-28T10:37:27.882Z",
+    "fuente": "Instagram",
+    "likes": 0,
+    "comentarios": 0
   }
 ]
