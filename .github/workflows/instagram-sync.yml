@@ -1,48 +1,54 @@
-name: Instagram Sync
+name: 🤖 Sync Instagram Posts
 
 on:
   schedule:
-    - cron: "0 * * * *" # cada hora
-  workflow_dispatch: # ejecución manual
+    # Se ejecuta cada 2 horas
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+    # También se puede lanzar manualmente desde GitHub → Actions
+
+permissions:
+  contents: write   # necesario para poder hacer commit
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
-      # 1. Clonar repo
-      - name: Checkout repository
+      # 1. Checkout del repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. Instalar pnpm
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 10
-
-      # 3. Setup Node
-      - name: Setup Node
+      # 2. Node 20 (sin dependencias externas, usa fetch nativo)
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: "pnpm"
+          node-version: "20"
 
-      # 4. Instalar dependencias
-      - name: Install dependencies
-        run: pnpm install
+      # 3. Ejecutar el agente
+      - name: Run Instagram sync agent
+        id: sync
+        run: node scripts/sync-instagram.mjs
+        env:
+          # Ajusta esta ruta si noticias.manual.json está en otro lugar
+          DATA_FILE: src/data/noticias.manual.json
+          # Puedes cambiar a una instancia privada de RSSHub si quieres
+          RSSHUB_BASE: https://rsshub.app
 
-      # 5. Ejecutar tu script EXACTO
-      - name: Run Instagram sync
-        run: pnpm instagram-sync
-
-      # 6. Commit automático del JSON
-      - name: Commit changes
+      # 4. Commit y push si el JSON cambió
+      - name: Commit changes (if any)
         run: |
-          git config user.name "instagram-bot"
-          git config user.email "bot@github.com"
+          git config user.name  "instagram-sync-bot"
+          git config user.email "sentimientocordobe@outlook.com"
+          git add src/data/noticias.manual.json
 
-          git add src/data/noticias.json
-
-          git commit -m "chore: update instagram feed" || echo "No changes"
-
-          git push
+          # Solo commitea si hay cambios reales en el archivo
+          if git diff --staged --quiet; then
+            echo "📭 Sin cambios en el JSON. Nada que commitear."
+          else
+            TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M UTC')
+            git commit -m "🤖 Instagram sync · $TIMESTAMP"
+            git push
+            echo "🚀 Cambios publicados. Vercel redesplegaría automáticamente."
+          fi
