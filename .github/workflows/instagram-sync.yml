@@ -28,13 +28,15 @@ jobs:
       - name: Run Instagram sync agent
         run: python scripts/sync-instagram.py
         env:
+          IG_USERNAME: ${{ secrets.IG_USERNAME }}
+          IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
           DATA_FILE: src/data/noticias.manual.json
           MAX_POSTS: "12"
 
       - name: Commit changes (if any)
         run: |
           git config user.name  "instagram-sync-bot"
-          git config user.email "sentimientocordobe@outlook.com"
+          git config user.email "bot@sentimientocordobe.com"
           git add src/data/noticias.manual.json
 
           if git diff --staged --quiet; then

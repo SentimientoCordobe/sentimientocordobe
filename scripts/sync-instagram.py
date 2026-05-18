@@ -1,13 +1,3 @@
-"""
-AGENTE: Sync Instagram → noticias.manual.json
-Usa instaloader para leer el perfil público @sentimientocordobe
-sin necesidad de API key ni credenciales.
-
-Uso:  python scripts/sync-instagram.py
-Env:  DATA_FILE  → ruta al JSON (default: src/data/noticias.manual.json)
-      MAX_POSTS  → cuántos posts recientes revisar (default: 12)
-"""
-
 import json
 import os
 import re
@@ -39,14 +29,13 @@ def slugify(text: str) -> str:
 
 
 def to_rfc2822(dt) -> str:
-    """Convierte datetime a formato compatible con el JSON existente."""
     dt_utc = dt.astimezone(timezone.utc)
     return dt_utc.strftime("%a, %d %b %Y %H:%M:%S GMT")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
-    # 1. Iniciar instaloader (sin login, perfil público)
+    # 1. Iniciar instaloader
     L = instaloader.Instaloader(
         download_pictures=False,
         download_videos=False,
@@ -57,7 +46,31 @@ def main():
         quiet=True,
     )
 
-    print(f"📡 Leyendo perfil público @{USERNAME}…")
+    # 2. Login con credenciales (Instagram bloquea acceso anónimo)
+    ig_user = os.environ.get("IG_USERNAME", "").strip()
+    ig_pass = os.environ.get("IG_PASSWORD", "").strip()
+
+    if not ig_user or not ig_pass:
+        print("❌ Faltan IG_USERNAME y/o IG_PASSWORD en las variables de entorno.")
+        print("   → Añádelas como GitHub Secrets en Settings → Secrets → Actions.")
+        sys.exit(1)
+
+    print(f"🔐 Haciendo login como @{ig_user}…")
+    try:
+        L.login(ig_user, ig_pass)
+        print("✅ Login correcto.")
+    except instaloader.exceptions.BadCredentialsException:
+        print("❌ Credenciales incorrectas. Revisa IG_USERNAME / IG_PASSWORD.")
+        sys.exit(1)
+    except instaloader.exceptions.TwoFactorAuthRequiredException:
+        print("❌ La cuenta tiene 2FA activo. Desactívalo o usa otra cuenta.")
+        sys.exit(1)
+    except Exception as e:
+        print(f"❌ Error en el login: {e}")
+        sys.exit(1)
+
+    # 3. Cargar perfil objetivo
+    print(f"📡 Leyendo perfil @{USERNAME}…")
     try:
         profile = instaloader.Profile.from_username(L.context, USERNAME)
     except instaloader.exceptions.ProfileNotExistsException:
@@ -67,7 +80,7 @@ def main():
         print(f"❌ Error al acceder al perfil: {e}")
         sys.exit(1)
 
-    # 2. Obtener los últimos MAX_POSTS posts
+    # 4. Obtener los últimos MAX_POSTS posts
     posts = []
     try:
         for i, post in enumerate(profile.get_posts()):
@@ -84,7 +97,7 @@ def main():
         print("⚠️  No se obtuvieron posts. Abortando sin cambios.")
         sys.exit(0)
 
-    # 3. Leer JSON actual
+    # 5. Leer JSON actual
     existing = []
     if DATA_FILE.exists():
         try:
@@ -94,7 +107,7 @@ def main():
     else:
         print(f"⚠️  {DATA_FILE} no existe. Se creará.")
 
-    # 4. Detectar posts nuevos
+    # 6. Detectar posts nuevos comparando por URL de Instagram
     existing_urls = {n.get("instagram", "") for n in existing if n.get("instagram")}
     new_posts = [
         p for p in posts
@@ -107,10 +120,10 @@ def main():
 
     print(f"🆕 Posts nuevos detectados: {len(new_posts)}")
 
-    # 5. Calcular próximo id
+    # 7. Calcular próximo id
     max_id = max((int(n.get("id", 0)) for n in existing), default=0)
 
-    # 6. Construir entradas con el esquema Noticia
+    # 8. Construir entradas con el esquema Noticia
     new_entries = []
     for i, post in enumerate(new_posts):
         titulo  = (post.caption or "").strip().replace("\n", " ")
@@ -134,7 +147,7 @@ def main():
         new_entries.append(entry)
         print(f"   • [{entry['id']}] {titulo[:70]}…")
 
-    # 7. Prepend y guardar (más recientes primero)
+    # 9. Prepend y guardar (más recientes primero)
     updated = new_entries + existing
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(
