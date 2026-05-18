@@ -1,20 +1,3 @@
-"""
-AGENTE: Sync Instagram → noticias.manual.json
-Usa el cookie sessionid de Instagram directamente (sin login).
-
-Env (GitHub Secrets):
-  IG_USERNAME    → tu usuario de Instagram (sin @)
-  IG_SESSION_ID  → valor del cookie 'sessionid' de instagram.com
-  DATA_FILE      → ruta al JSON (default: src/data/noticias.manual.json)
-  MAX_POSTS      → cuántos posts recientes revisar (default: 12)
-
-Cómo obtener IG_SESSION_ID:
-  1. Abre instagram.com en el navegador e inicia sesión
-  2. DevTools (F12) → Application → Cookies → https://www.instagram.com
-  3. Copia el valor del cookie llamado 'sessionid'
-  4. Guárdalo en GitHub → Settings → Secrets → Actions → IG_SESSION_ID
-"""
-
 import json
 import os
 import re
