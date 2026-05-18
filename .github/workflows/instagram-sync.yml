@@ -34,7 +34,7 @@ jobs:
       - name: Commit changes (if any)
         run: |
           git config user.name  "instagram-sync-bot"
-          git config user.email "bot@sentimientocordobe.com"
+          git config user.email "sentimientocordobe@outlook.com"
           git add src/data/noticias.manual.json
 
           if git diff --staged --quiet; then

@@ -23,7 +23,7 @@ except ImportError:
     sys.exit(1)
 
 # ── Configuración ─────────────────────────────────────────────────────────────
-USERNAME  = "sentimientocordobe"
+USERNAME  = "sentimiento_cordobe"
 DATA_FILE = Path(os.environ.get("DATA_FILE", "src/data/noticias.manual.json"))
 MAX_POSTS = int(os.environ.get("MAX_POSTS", "12"))
 
