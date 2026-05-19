@@ -10,9 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest",
-  "instagram-sync": "ts-node scripts/instagram-sync.ts",
-  "prebuild": "pnpm instagram-sync || echo '⚠️ fallo controlado'"},
+    "test:watch": "vitest"
+  },
   "packageManager": "pnpm@10.0.0",
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
