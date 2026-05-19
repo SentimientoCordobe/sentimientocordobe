@@ -50,47 +50,34 @@ def get_caption(node: dict) -> str:
 
 def extract_from_api(data: dict) -> list[dict]:
     """Intenta extraer posts de múltiples rutas del JSON de la API."""
-    edges = []
+    if not isinstance(data, dict):
+        return []
 
-    # Ruta v1 clásica
-    edges = (data.get("data", {})
-                 .get("user", {})
-                 .get("edge_owner_to_timeline_media", {})
-                 .get("edges", []))
+    root = data.get("data") or {}
+    if not isinstance(root, dict):
+        root = {}
 
-    # Ruta v2
+    edges = (root.get("user") or {}).get("edge_owner_to_timeline_media", {}).get("edges", [])
+
     if not edges:
-        edges = (data.get("data", {})
-                     .get("xdt_api__v1__feed__user_timeline_graphql_connection", {})
-                     .get("edges", []))
+        edges = (root.get("xdt_api__v1__feed__user_timeline_graphql_connection") or {}).get("edges", [])
 
-    # Ruta v3: items directos
     if not edges:
-        items = (data.get("data", {})
-                     .get("user", {})
-                     .get("edge_owner_to_timeline_media", {})
-                     .get("edges", []))
-        edges = items
-
-    # Ruta v4: items array (API v1 móvil)
-    if not edges:
-        raw_items = data.get("items", [])
-        edges = [{"node": item} for item in raw_items]
+        edges = [{"node": item} for item in (data.get("items") or [])]
 
     posts = []
     for edge in edges:
-        node = edge.get("node", {})
+        node = edge.get("node") or {}
         shortcode = node.get("shortcode") or node.get("code") or node.get("pk")
         if not shortcode:
             continue
-
         caption  = get_caption(node)
         taken_at = node.get("taken_at_timestamp") or node.get("taken_at") or 0
         thumbnail = (
             node.get("thumbnail_src")
             or node.get("display_url")
-            or (node.get("thumbnail_resources") or [{}])[-1].get("src", "")
-            or node.get("image_versions2", {}).get("candidates", [{}])[0].get("url", "")
+            or ((node.get("thumbnail_resources") or [{}])[-1]).get("src", "")
+            or ((node.get("image_versions2") or {}).get("candidates") or [{}])[0].get("url", "")
         )
         posts.append({
             "shortcode": str(shortcode),
