@@ -1,21 +1,15 @@
 name: 🤖 Telegram Bot
 
 on:
-  workflow_dispatch:        # lanzar manualmente
-  schedule:
-    - cron: "*/25 * * * *"  # relanzar cada 25 min (GitHub Actions para procesos largos)
+  workflow_dispatch:
 
 permissions:
   contents: write
 
-concurrency:
-  group: telegram-bot
-  cancel-in-progress: true
-
 jobs:
   bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 24     # justo antes del límite de 25 min del cron
+    timeout-minutes: 360
 
     steps:
       - name: Checkout
