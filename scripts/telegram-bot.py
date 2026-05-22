@@ -1,15 +1,3 @@
-"""
-BOT TELEGRAM: Recibe mensajes reenviados (foto + texto) y actualiza noticias.manual.json en GitHub.
-
-Uso: python scripts/telegram-bot.py
-Env:
-  TELEGRAM_BOT_TOKEN  → token del bot de Telegram
-  GH_PAT              → GitHub Personal Access Token con permisos repo
-  GH_REPO             → owner/repo  (default: SentimientoCordobe/sentimientocordobe)
-  GH_BRANCH           → rama        (default: main)
-  DATA_FILE           → ruta en el repo al JSON (default: src/data/noticias.manual.json)
-"""
-
 import base64
 import json
 import logging
@@ -178,8 +166,12 @@ def run_polling():
         try:
             result = tg_get("getUpdates", offset=offset, timeout=30, allowed_updates='["message"]')
             updates = result.get("result", [])
-
+            if updates:
+                log.info(f"Updates recibidos: {len(updates)}")
+            else:
+                log.info("Sin updates nuevos")
             for update in updates:
+
                 offset = update["update_id"] + 1
                 msg = update.get("message")
                 if msg:
