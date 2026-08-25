@@ -1,5 +1,31 @@
 [
   {
+    "id": 100,
+    "slug": "primera-victoria-cordoba-2-1-girona-jornada-2",
+    "titulo": "¡Primera victoria del curso! Córdoba 2-1 Girona FC en el Nuevo Arcángel",
+    "resumen": "Víctor Sánchez y Diego Bri firman los goles que le dan al Córdoba su primer triunfo de la temporada 2026/27.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    "fecha": "Fri, 21 Aug 2026 23:00:00 GMT",
+    "contenido": "El Córdoba CF consiguió su primera victoria del curso 2026/27 al imponerse 2-1 al Girona FC en el Nuevo Arcángel, en un partido correspondiente a la jornada 2 de LALIGA Hypermotion. Víctor Sánchez abrió el marcador y Diego Bri amplió la ventaja antes del descanso; el conjunto catalán recortó distancias ya en la recta final, pero el equipo blanquiverde supo sostener el resultado. Tras el tropiezo en la jornada 1 en Burgos, este triunfo permite al Córdoba sumar sus primeros tres puntos de la temporada.",
+    "fuente": "LALIGA",
+    "url": "https://www.laliga.com/laliga-hypermotion",
+    "tipo": "post",
+    "destacada": true
+  },
+  {
+    "id": 101,
+    "slug": "debut-liga-derrota-burgos-3-2-cordoba-jornada-1",
+    "titulo": "Debut liguero con derrota: Burgos 3-2 Córdoba",
+    "resumen": "El Córdoba cayó 3-2 en El Plantío en la primera jornada de LALIGA Hypermotion 2026/27.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    "fecha": "Sun, 16 Aug 2026 21:00:00 GMT",
+    "contenido": "El Córdoba CF arrancó la temporada 2026/27 de LALIGA Hypermotion con derrota en su visita a Burgos CF (3-2), en un partido disputado en El Plantío. El equipo blanquiverde llegó a inquietar al Burgos remontando parte del marcador, pero un último gol local en los minutos finales sentenció el encuentro. El Córdoba tendría que esperar a la jornada siguiente para sumar su primera victoria del curso.",
+    "fuente": "Redacción",
+    "url": "https://www.cordobacf.com/partidos",
+    "tipo": "post",
+    "destacada": false
+  },
+  {
     "id": 1,
     "slug": "fin-de-la-jornada-retro-35-el-cordoba-continua-12-tras-encadenar-2-victorias-consecutivas-ascenso-directo-13",
     "titulo": "📊Fin de la jornada retro (35), el Córdoba continúa 12º, tras encadenar 2 victorias consecutivas ⬆️ Ascenso directo: -13...",
@@ -9,7 +35,7 @@
     "contenido": "📊Fin de la jornada retro (35), el Córdoba continúa 12º, tras encadenar 2 victorias consecutivas ⬆️ Ascenso directo: -13...",
     "instagram": "https://www.instagram.com/p/DXFgFjdirdN",
     "tipo": "post",
-    "destacada": true
+    "destacada": false
   },
   {
     "id": 2,
