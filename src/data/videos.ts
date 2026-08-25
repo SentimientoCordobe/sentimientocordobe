@@ -7,11 +7,31 @@ export interface Video {
   youtube: string;
 }
 
+// Resúmenes oficiales de LALIGA HYPERMOTION (producción con la que DAZN
+// cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
+// no se incluye ningún vídeo sin confirmar que el enlace es real.
 export const videos: Video[] = [
+  {
+    id: "zhgpJGPYZB0",
+    titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
+    resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
+    miniatura: "https://img.youtube.com/vi/zhgpJGPYZB0/maxresdefault.jpg",
+    fecha: "16 Ago 2026",
+    youtube: "https://www.youtube.com/watch?v=zhgpJGPYZB0",
+  },
+
+  // ⚠️ PENDIENTE: no he podido verificar el enlace real del resumen oficial
+  // de Córdoba 2-1 Girona (jornada 2, 21 ago 2026), pese a buscarlo por
+  // varias vías. Antes de "inventar" un ID de YouTube (que daría un enlace
+  // roto o, peor, el vídeo de otro partido), lo dejo pendiente aquí.
+  // Para añadirlo: busca "CÓRDOBA CF 2 - 1 GIRONA FC | RESUMEN LALIGA
+  // HYPERMOTION" en youtube.com/@LALIGAHYPERMOTION, copia el ID del vídeo
+  // (la parte tras "watch?v=") y añade un bloque igual al de arriba.
+
   {
     id: "OIYC9Z2_f44",
     titulo: "Córdoba - SPORTING: 3-2",
-    resumen: "Jornada 37",    
+    resumen: "Jornada 37",
     miniatura: "https://img.youtube.com/vi/OIYC9Z2_f44/maxresdefault.jpg",
     fecha: "26 Abr 2026",
     youtube: "https://www.youtube.com/watch?v=OIYC9Z2_f44",
