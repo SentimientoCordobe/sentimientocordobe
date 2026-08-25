@@ -2,6 +2,9 @@ import { Link } from "react-router-dom"
 import { videos } from "../data/videos"
 import { clasificacion } from "../data/clasificacion"
 import { noticias } from "../data/noticias"
+import { encuestaResultado, encuestaMVP } from "../data/encuestas"
+import EncuestaResultado from "../components/EncuestaResultado"
+import EncuestaMVP from "../components/EncuestaMVP"
 import { Twitter, Instagram, Youtube } from "lucide-react"
 import { IoLogoTiktok } from "react-icons/io5"
 
@@ -99,6 +102,28 @@ export default function Index(): JSX.Element {
         </main>
 
         <aside className="space-y-6">
+          <div>
+            <h2 className="mb-4 text-xl font-bold uppercase">Encuestas</h2>
+            <div className="space-y-4">
+              <EncuestaResultado encuesta={encuestaResultado} />
+
+              {/* Separador estilo perforación de boleto */}
+              <div
+                aria-hidden
+                className="flex items-center gap-1.5 px-1"
+              >
+                {Array.from({ length: 24 }).map((_, i) => (
+                  <span
+                    key={i}
+                    className="h-1 w-1 rounded-full bg-border"
+                  />
+                ))}
+              </div>
+
+              <EncuestaMVP encuesta={encuestaMVP} />
+            </div>
+          </div>
+
           <div>
             <h2 className="mb-4 text-xl font-bold uppercase">Clasificación</h2>
 
