@@ -10,11 +10,11 @@ export const videos: Video[] = [
 
 {
     id: "zhgpJGPYZB0",
-    titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
-    resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
-    miniatura: "https://img.youtube.com/vi/aeTk3rFATJ8/maxresdefault.jpg",
+    titulo: "CÓRDOBA CF 2 - 1 GIRONA FC | RESUMEN LALIGA HYPERMOTION",
+    resumen: "Jornada 2 · El Córdoba se adelantó con un gol de Victor Sánchez, y marcó el segundo con un gol de Diego Bri. El Girona recortó distancias al final de la segunda parte.",
+    miniatura: "https://img.youtube.com/vi/C_bdPSC4sdE/maxresdefault.jpg",
     fecha: "16 Ago 2026",
-    youtube: "https://www.youtube.com/watch?v=aeTk3rFATJ8"
+    youtube: "https://www.youtube.com/watch?v=C_bdPSC4sdE"
 //www.youtube.com/watch?v=zhgpJGPYZB0",
   },
 // Resúmenes oficiales de LALIGA HYPERMOTION (producción con la que DAZN
