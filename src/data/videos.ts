@@ -6,11 +6,20 @@ export interface Video {
   fecha: string;
   youtube: string;
 }
+export const videos: Video[] = [
 
+{
+    id: "zhgpJGPYZB0",
+    titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
+    resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
+    miniatura: "https://img.youtube.com/vi/aeTk3rFATJ8/maxresdefault.jpg",
+    fecha: "16 Ago 2026",
+    youtube: "https://www.youtube.com/watch?v=aeTk3rFATJ8"
+//www.youtube.com/watch?v=zhgpJGPYZB0",
+  },
 // Resúmenes oficiales de LALIGA HYPERMOTION (producción con la que DAZN
 // cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
 // no se incluye ningún vídeo sin confirmar que el enlace es real.
-export const videos: Video[] = [
   {
     id: "zhgpJGPYZB0",
     titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
