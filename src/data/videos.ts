@@ -33,7 +33,7 @@ export const videos: Video[] = [
 resumen: "Jornada 2",    
      miniatura: "https://img.youtube.com/vi/a2yFkueXslc/maxresdefault.jpg",
     fecha: "22 de AGo 2026",
-    youtube: "https://www.youtube.com/watch?v=a2yFkueXslc",
+    youtube: "https://www.youtube.com/watch?v=hi0VGbroVng",
 }, 
   
   {
