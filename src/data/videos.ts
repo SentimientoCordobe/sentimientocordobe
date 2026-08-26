@@ -11,6 +11,15 @@ export interface Video {
 // cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
 // no se incluye ningún vídeo sin confirmar que el enlace es real.
 export const videos: Video[] = [
+   {
+    id: "OIYC9Z2_f44",
+    titulo: "Córdoba - Girona: 2-1",
+    resumen: "Jornada 2 · El Córdoba se adelantó con un gol de Victor Sánchez, y otro de Diego Bri, pero el Girona recorto distancias al final del encuentro en El Arcángel.",
+    miniatura: "https://img.youtube.com/vi/aeTk3rFATJ8/maxresdefault.jpg",
+    fecha: "26 Abr 2026",
+    youtube: "https://www.youtube.com/watch?v=aeTk3rFATJ8",
+
+  },
   {
     id: "zhgpJGPYZB0",
     titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
@@ -28,15 +37,7 @@ export const videos: Video[] = [
   // HYPERMOTION" en youtube.com/@LALIGAHYPERMOTION, copia el ID del vídeo
   // (la parte tras "watch?v=") y añade un bloque igual al de arriba.
 
-  {
-    id: "OIYC9Z2_f44",
-    titulo: "Córdoba - SPORTING: 3-2",
-    resumen: "Jornada 37",
-    miniatura: "https://img.youtube.com/vi/OIYC9Z2_f44/maxresdefault.jpg",
-    fecha: "26 Abr 2026",
-    youtube: "https://www.youtube.com/watch?v=OIYC9Z2_f44",
 
-  },
   
   {
     id: "a2yFkueXslc", 
