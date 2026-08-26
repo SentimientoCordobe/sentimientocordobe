@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { Twitter, Instagram, Youtube } from "lucide-react";
+import ArcoCalifal from "./ArcoCalifal";
 
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
+      <ArcoCalifal colorClassName="bg-secondary" className="rotate-180" />
       <div className="container mx-auto px-4 py-10">
         <div className="grid gap-8 md:grid-cols-3">
 

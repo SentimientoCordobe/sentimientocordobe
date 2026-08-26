@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { noticias, type Noticia } from "../data/noticias"
+import InstagramEmbed from "../components/InstagramLink"
 
 export default function Noticia(): JSX.Element {
   
@@ -41,6 +42,10 @@ const noticiaEncontrada = noticias.find(
       <div className="text-lg whitespace-pre-line leading-relaxed mb-10">
         {noticiaEncontrada.contenido}
       </div>
+
+      {noticiaEncontrada.instagram && (
+        <InstagramEmbed url={noticiaEncontrada.instagram} />
+      )}
     </div>
   )
 }

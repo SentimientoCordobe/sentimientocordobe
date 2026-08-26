@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import ArcoCalifal from "./ArcoCalifal";
 
 const navLinks = [
   { to: "/", label: "Inicio" },
@@ -73,6 +74,8 @@ export default function Navbar() {
           ))}
         </nav>
       )}
+
+      <ArcoCalifal colorClassName="bg-secondary" />
     </header>
   );
 }

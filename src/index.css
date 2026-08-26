@@ -4,85 +4,94 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Paleta "califal" — inspirada en la Mezquita-Catedral y los patios de
+ * Córdoba, en lugar de un verde/dorado genérico de plantilla:
+ *  - Verde califa   #0F3D2A → el verde del escudo, más profundo y tintado
+ *  - Oro mezquita   #C08A3E → dorado envejecido (latón), no dorado banca
+ *  - Albero         #F2E6D3 → arena cálida de patios/plaza de toros
+ *  - Terracota      #B5502D → acento raro: en directo, derrotas, alertas
+ *  - Tinta          #15140F → texto, casi negro pero cálido
+ */
 @layer base {
   :root {
-    --background: 0 0% 97%;
-    --foreground: 150 100% 8%;
+    --background: 36 45% 93%;
+    --foreground: 50 20% 8%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 150 100% 8%;
+    --card: 40 38% 97%;
+    --card-foreground: 50 20% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 150 100% 8%;
+    --popover: 40 38% 97%;
+    --popover-foreground: 50 20% 8%;
 
-    --primary: 153 100% 21%;
-    --primary-foreground: 43 50% 90%;
+    --primary: 155 60% 15%;
+    --primary-foreground: 36 45% 95%;
 
-    --secondary: 43 45% 56%;
-    --secondary-foreground: 150 100% 8%;
+    --secondary: 35 51% 50%;
+    --secondary-foreground: 50 30% 10%;
 
-    --muted: 150 10% 92%;
-    --muted-foreground: 150 10% 40%;
+    --muted: 36 25% 88%;
+    --muted-foreground: 50 12% 38%;
 
-    --accent: 43 45% 56%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 35 51% 50%;
+    --accent-foreground: 40 38% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 15 60% 44%;
+    --destructive-foreground: 36 45% 95%;
 
-    --border: 150 10% 85%;
-    --input: 150 10% 85%;
-    --ring: 153 100% 21%;
+    --border: 36 20% 82%;
+    --input: 36 20% 82%;
+    --ring: 155 60% 15%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 153 100% 15%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 43 45% 56%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 153 80% 18%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 153 60% 20%;
-    --sidebar-ring: 43 45% 56%;
+    --sidebar-background: 155 55% 12%;
+    --sidebar-foreground: 36 45% 93%;
+    --sidebar-primary: 35 51% 50%;
+    --sidebar-primary-foreground: 50 30% 10%;
+    --sidebar-accent: 155 45% 16%;
+    --sidebar-accent-foreground: 36 45% 93%;
+    --sidebar-border: 155 40% 18%;
+    --sidebar-ring: 35 51% 50%;
   }
 
   .dark {
-    --background: 150 30% 6%;
-    --foreground: 0 0% 95%;
+    --background: 155 30% 7%;
+    --foreground: 36 30% 92%;
 
-    --card: 150 30% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 155 25% 11%;
+    --card-foreground: 36 30% 92%;
 
-    --popover: 150 30% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 155 25% 11%;
+    --popover-foreground: 36 30% 92%;
 
-    --primary: 153 100% 25%;
-    --primary-foreground: 43 50% 90%;
+    --primary: 155 45% 30%;
+    --primary-foreground: 36 45% 95%;
 
-    --secondary: 43 45% 45%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 35 51% 45%;
+    --secondary-foreground: 36 45% 95%;
 
-    --muted: 150 15% 15%;
-    --muted-foreground: 150 10% 60%;
+    --muted: 155 15% 16%;
+    --muted-foreground: 36 12% 65%;
 
-    --accent: 43 45% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 35 51% 45%;
+    --accent-foreground: 36 45% 95%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 15 55% 40%;
+    --destructive-foreground: 36 45% 95%;
 
-    --border: 150 15% 20%;
-    --input: 150 15% 20%;
-    --ring: 153 100% 25%;
+    --border: 155 15% 20%;
+    --input: 155 15% 20%;
+    --ring: 155 45% 30%;
 
-    --sidebar-background: 150 30% 6%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 43 45% 56%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 150 20% 12%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 150 15% 15%;
-    --sidebar-ring: 43 45% 56%;
+    --sidebar-background: 155 30% 7%;
+    --sidebar-foreground: 36 30% 92%;
+    --sidebar-primary: 35 51% 50%;
+    --sidebar-primary-foreground: 50 30% 10%;
+    --sidebar-accent: 155 20% 13%;
+    --sidebar-accent-foreground: 36 30% 92%;
+    --sidebar-border: 155 15% 16%;
+    --sidebar-ring: 35 51% 50%;
   }
 }
 
@@ -99,3 +108,4 @@
     font-family: 'Oswald', sans-serif;
   }
 }
+

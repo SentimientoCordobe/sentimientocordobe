@@ -6,34 +6,45 @@ export interface Video {
   fecha: string;
   youtube: string;
 }
-export const videos: Video[] = [
 
-{
-    id: "1",
-    titulo: "CÓRDOBA CF 2 - 1 GIRONA FC | RESUMEN LALIGA HYPERMOTION",
-    resumen: "Jornada 2 · El Córdoba se adelantó con un gol de Victor Sánchez, y marcó el segundo con un gol de Diego Bri. El Girona recortó distancias al final de la segunda parte.",
-    miniatura: "https://img.youtube.com/vi/C_bdPSC4sdE/maxresdefault.jpg",
-    fecha: "22 Ago 2026",
-    youtube: "https://www.youtube.com/watch?v=C_bdPSC4sdE"
-  },
+// Resúmenes oficiales de LALIGA HYPERMOTION (producción con la que DAZN
+// cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
+// no se incluye ningún vídeo sin confirmar que el enlace es real.
+export const videos: Video[] = [
   {
-    id: "3",
+    id: "zhgpJGPYZB0",
     titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
     resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
-    miniatura: "https://img.youtube.com/vi/VE39pd91Q2w/maxresdefault.jpg",
+    miniatura: "https://img.youtube.com/vi/zhgpJGPYZB0/maxresdefault.jpg",
     fecha: "16 Ago 2026",
-    youtube: "https://www.youtube.com/watch?v=VE39pd91Q2w",
+    youtube: "https://www.youtube.com/watch?v=zhgpJGPYZB0",
   },
 
-  
+  // ⚠️ PENDIENTE: no he podido verificar el enlace real del resumen oficial
+  // de Córdoba 2-1 Girona (jornada 2, 21 ago 2026), pese a buscarlo por
+  // varias vías. Antes de "inventar" un ID de YouTube (que daría un enlace
+  // roto o, peor, el vídeo de otro partido), lo dejo pendiente aquí.
+  // Para añadirlo: busca "CÓRDOBA CF 2 - 1 GIRONA FC | RESUMEN LALIGA
+  // HYPERMOTION" en youtube.com/@LALIGAHYPERMOTION, copia el ID del vídeo
+  // (la parte tras "watch?v=") y añade un bloque igual al de arriba.
+
+  {
+    id: "OIYC9Z2_f44",
+    titulo: "Córdoba - SPORTING: 3-2",
+    resumen: "Jornada 37",
+    miniatura: "https://img.youtube.com/vi/OIYC9Z2_f44/maxresdefault.jpg",
+    fecha: "26 Abr 2026",
+    youtube: "https://www.youtube.com/watch?v=OIYC9Z2_f44",
+
+  },
   
   {
-    id: "2", 
+    id: "a2yFkueXslc", 
     titulo: "RUEDA DE PRENSA IVAN ANIA",
-resumen: "Jornada 2",    
+resumen: "Jornada 36",    
      miniatura: "https://img.youtube.com/vi/a2yFkueXslc/maxresdefault.jpg",
-    fecha: "22 de AGo 2026",
-    youtube: "https://www.youtube.com/watch?v=hi0VGbroVng",
+    fecha: "26 de Abr 2026",
+    youtube: "https://www.youtube.com/watch?v=a2yFkueXslc",
 }, 
   
   {
