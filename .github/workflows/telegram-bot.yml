@@ -1,0 +1,33 @@
+name: 🤖 Telegram Bot
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests --quiet
+
+      - name: Run Telegram bot
+        run: python scripts/telegram-bot.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          GH_PAT:             ${{ secrets.GH_PAT }}
+          GH_REPO:            SentimientoCordobe/sentimientocordobe
+          GH_BRANCH:          main
+          DATA_FILE:          src/data/noticias.manual.json

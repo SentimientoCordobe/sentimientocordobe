@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/telegram-bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: GH_PAT
+        sync: false
+      - key: GH_REPO
+        value: SentimientoCordobe/sentimientocordobe
+      - key: GH_BRANCH
+        value: main
+      - key: DATA_FILE
+        value: src/data/noticias.manual.json
