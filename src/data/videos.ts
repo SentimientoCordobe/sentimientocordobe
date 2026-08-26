@@ -21,6 +21,14 @@ export const videos: Video[] = [
 
   },
   {
+    id: "a2yFkueXslc", 
+    titulo: "PRESENTACIÓN DANI BUDESCA",
+resumen: "RUEDA DE PRENSA CON EL CEO Y DIRECTOR DEPORTIVO",    
+     miniatura: "https://img.youtube.com/vi/QlFCgaOQ3-M/maxresdefault.jpg",
+    fecha: "26 de Abr 2026",
+    youtube: "https://www.youtube.com/live/QlFCgaOQ3-M",
+}, 
+  {
     id: "zhgpJGPYZB0",
     titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
     resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
@@ -28,16 +36,6 @@ export const videos: Video[] = [
     fecha: "16 Ago 2026",
     youtube: "https://www.youtube.com/watch?v=zhgpJGPYZB0",
   },
-
-  // ⚠️ PENDIENTE: no he podido verificar el enlace real del resumen oficial
-  // de Córdoba 2-1 Girona (jornada 2, 21 ago 2026), pese a buscarlo por
-  // varias vías. Antes de "inventar" un ID de YouTube (que daría un enlace
-  // roto o, peor, el vídeo de otro partido), lo dejo pendiente aquí.
-  // Para añadirlo: busca "CÓRDOBA CF 2 - 1 GIRONA FC | RESUMEN LALIGA
-  // HYPERMOTION" en youtube.com/@LALIGAHYPERMOTION, copia el ID del vídeo
-  // (la parte tras "watch?v=") y añade un bloque igual al de arriba.
-
-
   
   {
     id: "a2yFkueXslc", 
