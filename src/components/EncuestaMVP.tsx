@@ -20,23 +20,28 @@ export default function EncuestaMVP({ encuesta }: Props) {
   );
 
   return (
-    <div className="rounded-lg border bg-card p-4 shadow-sm">
-      <p className="font-display text-[11px] font-semibold uppercase tracking-widest text-secondary">
-        MVP del partido
-      </p>
-      <p className="mt-0.5 text-sm font-semibold leading-snug">
-        {encuesta.pregunta}
-      </p>
+    <div className="overflow-hidden rounded-lg border bg-card shadow-sm">
+      {/* Cabecera a juego con la encuesta de pronóstico */}
+      <div className="bg-primary px-4 py-3 text-primary-foreground">
+        <p className="font-display text-[11px] font-semibold uppercase tracking-widest text-secondary">
+          MVP del partido
+        </p>
+        <p className="mt-0.5 text-sm font-semibold leading-snug">
+          {encuesta.pregunta}
+        </p>
+      </div>
 
+      {/* Filas de jugadores en rayas blanco/verde, como la camiseta blanquiverde */}
       <div
         role="radiogroup"
         aria-label={encuesta.pregunta}
-        className="mt-4 grid grid-cols-1 gap-2"
+        className="divide-y divide-primary/10"
       >
-        {encuesta.opciones.map((op) => {
+        {encuesta.opciones.map((op, i) => {
           const seleccionada = tuVoto === op.id;
           const porcentaje = pct(op.id);
           const esLider = yaVoto && total > 0 && lider === op.id;
+          const raya = i % 2 === 0 ? "bg-white" : "bg-primary/[0.06]";
 
           return (
             <button
@@ -46,16 +51,16 @@ export default function EncuestaMVP({ encuesta }: Props) {
               aria-checked={seleccionada}
               disabled={yaVoto || cargando}
               onClick={() => votar(op.id)}
-              className={`relative flex items-center gap-3 overflow-hidden rounded-md border px-3 py-2 text-left transition disabled:cursor-default ${
-                seleccionada
-                  ? "border-secondary bg-secondary/10"
-                  : "border-transparent hover:bg-muted"
+              className={`relative flex w-full items-center gap-3 overflow-hidden px-4 py-2.5 text-left transition disabled:cursor-default ${
+                seleccionada ? "bg-secondary/15" : `${raya} hover:bg-secondary/10`
               }`}
             >
               {yaVoto && (
                 <span
                   aria-hidden
-                  className="absolute inset-y-0 left-0 bg-secondary/15 transition-all duration-500"
+                  className={`absolute inset-y-0 left-0 transition-all duration-500 ${
+                    seleccionada ? "bg-secondary/20" : "bg-primary/10"
+                  }`}
                   style={{ width: `${porcentaje}%` }}
                 />
               )}
@@ -72,7 +77,11 @@ export default function EncuestaMVP({ encuesta }: Props) {
               </span>
 
               <span className="relative z-10 flex flex-1 items-center justify-between gap-2">
-                <span className="text-sm font-semibold">
+                <span
+                  className={`text-sm font-semibold ${
+                    seleccionada ? "text-primary" : ""
+                  }`}
+                >
                   {op.label}
                   {esLider && (
                     <span className="ml-1.5 text-secondary" aria-label="Va en cabeza">
@@ -92,14 +101,17 @@ export default function EncuestaMVP({ encuesta }: Props) {
         })}
       </div>
 
-      <div className="mt-3 flex items-center justify-between text-xs text-muted-foreground">
+      <div className="flex items-center justify-between border-t bg-muted/40 px-4 py-2 text-xs text-muted-foreground">
         <span>
           {total} {total === 1 ? "voto" : "votos"}
         </span>
         {!yaVoto && <span>Toca un jugador para votar</span>}
       </div>
 
-      {error && <p className="mt-2 text-xs text-destructive">{error}</p>}
+      {error && (
+        <p className="border-t px-4 py-2 text-xs text-destructive">{error}</p>
+      )}
     </div>
   );
 }
+

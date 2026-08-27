@@ -45,3 +45,15 @@ Web de noticias y contenido del Córdoba CF con estética verde y dorada. Inclui
 ## Datos
 - Todo el contenido será estático/de ejemplo (noticias, jugadores, clasificación, calendario)
 - No se necesita base de datos ni backend
+
+## Autoría y licencia
+
+**© 2025–2026 Javier Garzón. Todos los derechos reservados.**
+
+Este proyecto y su código fuente son propiedad de Javier Garzón
+([LinkedIn](https://www.linkedin.com/in/javier-garzon-garcia/)). Queda prohibida
+la reproducción, distribución o uso comercial de este código sin autorización
+expresa del autor.
+
+Los nombres, escudos y marcas de Córdoba CF pertenecen a sus respectivos
+titulares; este es un proyecto de fan no oficial y no está afiliado al club.
