@@ -11,31 +11,7 @@ export interface Video {
 // cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
 // no se incluye ningún vídeo sin confirmar que el enlace es real.
 export const videos: Video[] = [
-   {
-    id: "OIYC9Z2_f44",
-    titulo: "Córdoba - Girona: 2-1",
-    resumen: "Jornada 2 · El Córdoba se adelantó con un gol de Victor Sánchez, y otro de Diego Bri, pero el Girona recorto distancias al final del encuentro en El Arcángel.",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2026/08/21/large/3337bb37-1e66-4653-9bcf-a6f3d4833039-634.JPG",
-    fecha: "26 Abr 2026",
-    youtube: "https://youtu.be/aeTk3rFATJ8?si=n198bdI7efW665ow",
-
-  },
-  {
-    id: "a2yFkueXslc", 
-    titulo: "PRESENTACIÓN DANI BUDESCA",
-resumen: "RUEDA DE PRENSA CON EL CEO Y DIRECTOR DEPORTIVO",    
-     miniatura: "https://img.youtube.com/vi/QlFCgaOQ3-M/maxresdefault.jpg",
-    fecha: "26 de Abr 2026",
-    youtube: "https://www.youtube.com/live/QlFCgaOQ3-M",
-}, 
-  {
-    id: "zhgpJGPYZB0",
-    titulo: "BURGOS CF 3 - 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
-    resumen: "Jornada 1 · El Córdoba se adelantó con un gol de Diarra, pero Burgos remontó en El Plantío.",
-    miniatura: "https://static.grupojoly.com/clip/a9eafdd0-588c-4723-98fa-918593795650_source-aspect-ratio_1600w_0.webp",
-    fecha: "16 Ago 2026",
-    youtube: "https://youtu.be/zhgpJGPYZB0?si=wSyar0rqNr77Sic_",
-  },
+  
   {
     id: "GG660uVUp_Q",
     titulo: "ASÍ se VIVE un PARTIDO en PALCO VIP del CÓRDOBA CF",
