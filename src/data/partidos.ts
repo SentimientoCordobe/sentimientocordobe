@@ -10,10 +10,7 @@ export interface Partido {
 }
  
 export const partidos: Partido[] = [
-  // NOTA: sustituye "youtube" por el enlace real del resumen en YouTube en
-  // cuanto el club lo publique; de momento apunta a la página oficial de
-  // partidos para no enlazar un vídeo inexistente.
-  {
+ {
     rival: "Girona FC",
     resultado: "2-1",
     fecha: "21 Ago 2026",
@@ -30,11 +27,7 @@ export const partidos: Partido[] = [
     local: false,
   },
  
-  // ── PRETEMPORADA 2026/27 ──────────────────────────────────────────────
-  // Amistosos de preparación antes del estreno liguero. No suele haber
-  // resúmenes oficiales tipo "LALIGA HYPERMOTION" para los amistosos, así
-  // que "youtube" enlaza a la crónica real verificada de cada partido.
-  {
+ {
     rival: "Real Jaén",
     resultado: "1-2",
     fecha: "6 Ago 2026",
