@@ -11,12 +11,6 @@ export interface Encuesta {
   opciones: OpcionEncuesta[];
 }
 
-// ⚠️ IMPORTANTE: el "id" de cada encuesta y los "id" de sus opciones deben
-// coincidir EXACTAMENTE con la lista blanca ENCUESTAS en api/votes.ts, o el
-// backend rechazará los votos con un 404/400. Actualiza los dos sitios cada
-// vez que cambies la encuesta activa (nuevo partido / nuevo MVP a votar).
-
-// Encuesta de pronóstico del próximo partido.
 export const encuestaResultado: Encuesta = {
   id: "resultado-j3-granada",
   pregunta: "Córdoba CF vs Granada CF — Jornada 3, 30 ago (Nuevo Arcángel)",

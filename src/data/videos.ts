@@ -7,9 +7,6 @@ export interface Video {
   youtube: string;
 }
 
-// Resúmenes oficiales de LALIGA HYPERMOTION (producción con la que DAZN
-// cubre la Segunda División), temporada 2026/27. Verificados uno a uno:
-// no se incluye ningún vídeo sin confirmar que el enlace es real.
 export const videos: Video[] = [
   
   {

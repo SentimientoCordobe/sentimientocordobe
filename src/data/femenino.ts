@@ -1,8 +1,3 @@
-// ── Jugadoras del Córdoba CF Femenino — Segunda Federación, Grupo III ──
-// Fuente: Cordópolis (elDiario.es) — reconstrucción de plantilla 2026/27
-// (15 bajas, 11 caras nuevas). El club no ha publicado dorsales fijos
-// para todas las jugadoras en el momento de esta actualización, así que
-// el campo es opcional.
 export interface JugadoraFemenino {
   nombre: string;
   posicion: string;

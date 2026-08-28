@@ -4,11 +4,7 @@ interface Props {
   colorClassName?: string;
 }
 
-/**
- * Fila de arcos de herradura (motivo de la Mezquita-Catedral de Córdoba,
- * de donde viene el mote "califas" de la afición). Se usa como remate
- * visual entre secciones, en vez de un divisor genérico.
- */
+
 export default function ArcoCalifal({
   className = "",
   colorClassName = "bg-primary",

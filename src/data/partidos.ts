@@ -1,5 +1,5 @@
 import type { Noticia } from "./noticias";
-
+ 
 export interface Partido {
   rival: string;
   resultado: string;
@@ -8,7 +8,7 @@ export interface Partido {
   miniatura: string;
   local: boolean;
 }
-
+ 
 export const partidos: Partido[] = [
   // NOTA: sustituye "youtube" por el enlace real del resumen en YouTube en
   // cuanto el club lo publique; de momento apunta a la página oficial de
@@ -29,7 +29,94 @@ export const partidos: Partido[] = [
     miniatura: "https://static.grupojoly.com/clip/a9eafdd0-588c-4723-98fa-918593795650_source-aspect-ratio_1600w_0.webp",
     local: false,
   },
-
+ 
+  // ── PRETEMPORADA 2026/27 ──────────────────────────────────────────────
+  // Amistosos de preparación antes del estreno liguero. No suele haber
+  // resúmenes oficiales tipo "LALIGA HYPERMOTION" para los amistosos, así
+  // que "youtube" enlaza a la crónica real verificada de cada partido.
+  {
+    rival: "Real Jaén",
+    resultado: "1-2",
+    fecha: "6 Ago 2026",
+    youtube: "https://www.revistaelremate.com/single-post/1-2-el-trofeo-del-olivo-para-el-c%C3%B3rdoba-c-f",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    local: false,
+  },
+  {
+    rival: "Elche CF",
+    resultado: "2-2",
+    fecha: "31 Jul 2026",
+    youtube: "https://cordopolis.eldiario.es/deportes/ccf/amistoso-caro-surrealista-2-2_129_13420123.html",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    local: false,
+  },
+  {
+    rival: "Cádiz CF",
+    resultado: "0-1",
+    fecha: "25 Jul 2026",
+    youtube: "https://www.cadizdirecto.com/cadiz/el-cadiz-cf-encadena-su-tercera-derrota-de-pretemporada-y-el-segundo-partido-sin-marcar",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    local: false,
+  },
+  {
+    rival: "Sevilla FC",
+    resultado: "0-0 (4-5 pen.)",
+    fecha: "23 Jul 2026",
+    youtube: "https://www.cordobacf.com/noticias/el-cordoba-cf-suma-un-nuevo-compromiso-a-su-calendario-de-pretemporada-jugara-ante-el-elche-cf-en-oliva",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    local: true,
+  },
+  {
+    rival: "Orlando Pirates",
+    resultado: "1-1",
+    fecha: "8 Jul 2026",
+    youtube: "https://www.cordobacf.com/noticias/el-cordoba-cf-suma-un-nuevo-compromiso-a-su-calendario-de-pretemporada-jugara-ante-el-elche-cf-en-oliva",
+    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    local: false,
+  },
+ 
+  // ── TEMPORADA 2025/26 (completa) ──────────────────────────────────────
+  {
+    rival: "SD Huesca",
+    resultado: "1-1",
+    fecha: "31 May 2026",
+    youtube: "https://www.youtube.com/watch?v=dGRDbQU3k9A",
+    miniatura: "https://img.youtube.com/vi/dGRDbQU3k9A/maxresdefault.jpg",
+    local: true,
+  },
+  {
+    rival: "SD Eibar",
+    resultado: "2-0",
+    fecha: "24 May 2026",
+    youtube: "https://www.youtube.com/watch?v=RVexZ3T6rXY",
+    miniatura: "https://img.youtube.com/vi/RVexZ3T6rXY/maxresdefault.jpg",
+    local: false,
+  },
+  {
+    rival: "Albacete BP",
+    resultado: "1-2",
+    fecha: "15 May 2026",
+    youtube: "https://www.youtube.com/watch?v=nTkxsqsUfzw",
+    miniatura: "https://img.youtube.com/vi/nTkxsqsUfzw/maxresdefault.jpg",
+    local: true,
+  },
+  {
+    rival: "Granada CF",
+    resultado: "1-0",
+    fecha: "10 May 2026",
+    youtube: "https://www.youtube.com/watch?v=wqT7qeRMBsM",
+    miniatura: "https://img.youtube.com/vi/wqT7qeRMBsM/maxresdefault.jpg",
+    local: true,
+  },
+  {
+    rival: "CD Castellón",
+    resultado: "1-2",
+    fecha: "3 May 2026",
+    youtube: "https://www.youtube.com/watch?v=8Z-MvxEt7aU",
+    miniatura: "https://img.youtube.com/vi/8Z-MvxEt7aU/maxresdefault.jpg",
+    local: false,
+  },
+ 
  {
     rival: "Sporting de Gijón",
     resultado: "3-2",
@@ -37,7 +124,7 @@ export const partidos: Partido[] = [
     youtube: "https://www.youtube.com/watch?v=OIYC9Z2_f44",
      miniatura: "https://img.youtube.com/vi/OIYC9Z2_f44/maxresdefault.jpg",
     local: true,}, 
-
+ 
   {
     rival: "Cultural Leonesa",
     resultado: "2-1",
@@ -326,3 +413,4 @@ export const partidos: Partido[] = [
     local: false,
   },
 ];
+ 

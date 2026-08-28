@@ -1,4 +1,3 @@
-// src/components/InstagramLink.tsx
 interface Props {
   url: string
   titulo?: string

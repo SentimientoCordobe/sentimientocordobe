@@ -1,7 +1,3 @@
-// ── Jugadores del Córdoba CF B (filial) — Tercera Federación, Grupo 10 ──
-// Fuente: BeSoccer (plantilla 2026/27), cotejado con la web oficial.
-// El filial no publica dorsales fijos como el primer equipo, así que el
-// campo es opcional; el entrenador es Diego Tristán (desde 07/04/2026).
 export interface JugadorFilial {
   nombre: string;
   posicion: string;

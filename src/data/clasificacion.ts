@@ -13,11 +13,6 @@ export interface EquipoClasificacion {
   esCordoba?: boolean;
 }
 
-// Clasificación de LALIGA Hypermotion (Segunda División) 2026/27,
-// completa tras la Jornada 2 (los 22 equipos ya han jugado 2 partidos).
-// Verificada con resultados oficiales a 27/08/2026 (RFEF / agencia EFE).
-// La Jornada 3 arranca el 28/08/2026 — actualiza esta tabla tras cada
-// jornada.
 export const clasificacion: EquipoClasificacion[] = [
   { posicion: 1, equipo: "UD Las Palmas", puntos: 6, pj: 2, pg: 2, pe: 0, pp: 0, gf: 4, gc: 1, dg: 3 },
 { posicion: 2, equipo: "CD Tenerife", puntos: 6, pj: 2, pg: 2, pe: 0, pp: 0, gf: 4, gc: 1, dg: 3 },

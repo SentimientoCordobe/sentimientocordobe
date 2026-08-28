@@ -1,9 +1,6 @@
 import type { Noticia } from "./noticias"
 export type { Noticia }
 
-// ── Jugadores (Plantilla oficial Córdoba CF 2026/27) ──
-// Fuente: cordobacf.com (web oficial, ficha individual de cada jugador)
-// — todas las fotos verificadas una a una el 27/08/2026.
 export interface Jugador {
   nombre: string;
   posicion: string;
