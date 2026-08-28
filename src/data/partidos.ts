@@ -1,5 +1,3 @@
-import type { Noticia } from "./noticias";
- 
 export interface Partido {
   rival: string;
   resultado: string;
@@ -8,9 +6,12 @@ export interface Partido {
   miniatura: string;
   local: boolean;
 }
- 
-export const partidos: Partido[] = [
- {
+
+// ══════════════════════════════════════════════════════════════════════
+// TEMPORADA 2026/27 (actual)
+// ══════════════════════════════════════════════════════════════════════
+export const partidosTemporada2627: Partido[] = [
+  {
     rival: "Girona FC",
     resultado: "2-1",
     fecha: "21 Ago 2026",
@@ -26,49 +27,59 @@ export const partidos: Partido[] = [
     miniatura: "https://static.grupojoly.com/clip/a9eafdd0-588c-4723-98fa-918593795650_source-aspect-ratio_1600w_0.webp",
     local: false,
   },
- 
- {
+];
+
+// ══════════════════════════════════════════════════════════════════════
+// PRETEMPORADA 2026/27
+// Amistosos de preparación antes del estreno liguero.
+// ══════════════════════════════════════════════════════════════════════
+export const partidosPretemporada2627: Partido[] = [
+  {
     rival: "Real Jaén",
     resultado: "1-2",
     fecha: "6 Ago 2026",
-    youtube: "https://www.revistaelremate.com/single-post/1-2-el-trofeo-del-olivo-para-el-c%C3%B3rdoba-c-f",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    youtube: "https://www.youtube.com/watch?v=4VQ20b1Z1pk",
+    miniatura: "https://img.youtube.com/vi/4VQ20b1Z1pk/maxresdefault.jpg",
     local: false,
   },
   {
     rival: "Elche CF",
     resultado: "2-2",
     fecha: "31 Jul 2026",
-    youtube: "https://cordopolis.eldiario.es/deportes/ccf/amistoso-caro-surrealista-2-2_129_13420123.html",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    youtube: "https://www.youtube.com/watch?v=0wgDlPpeGro",
+    miniatura: "https://img.youtube.com/vi/0wgDlPpeGro/maxresdefault.jpg",
     local: false,
   },
   {
     rival: "Cádiz CF",
     resultado: "0-1",
     fecha: "25 Jul 2026",
-    youtube: "https://www.cadizdirecto.com/cadiz/el-cadiz-cf-encadena-su-tercera-derrota-de-pretemporada-y-el-segundo-partido-sin-marcar",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    youtube: "https://www.youtube.com/watch?v=Gq3JFtSdFRw",
+    miniatura: "https://img.youtube.com/vi/Gq3JFtSdFRw/maxresdefault.jpg",
     local: false,
   },
   {
     rival: "Sevilla FC",
     resultado: "0-0 (4-5 pen.)",
     fecha: "23 Jul 2026",
-    youtube: "https://www.cordobacf.com/noticias/el-cordoba-cf-suma-un-nuevo-compromiso-a-su-calendario-de-pretemporada-jugara-ante-el-elche-cf-en-oliva",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    youtube: "https://www.youtube.com/watch?v=6MtfGMSdLWw",
+    miniatura: "https://img.youtube.com/vi/6MtfGMSdLWw/maxresdefault.jpg",
     local: true,
   },
   {
     rival: "Orlando Pirates",
     resultado: "1-1",
     fecha: "8 Jul 2026",
-    youtube: "https://www.cordobacf.com/noticias/el-cordoba-cf-suma-un-nuevo-compromiso-a-su-calendario-de-pretemporada-jugara-ante-el-elche-cf-en-oliva",
-    miniatura: "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    youtube: "https://www.youtube.com/watch?v=fEVkH8yAiRM",
+    miniatura: "https://img.youtube.com/vi/fEVkH8yAiRM/maxresdefault.jpg",
     local: false,
   },
- 
-  // ── TEMPORADA 2025/26 (completa) ──────────────────────────────────────
+];
+
+// ══════════════════════════════════════════════════════════════════════
+// TEMPORADA 2025/26 (completa)
+// ══════════════════════════════════════════════════════════════════════
+export const partidosTemporada2526: Partido[] = [
   {
     rival: "SD Huesca",
     resultado: "1-1",
@@ -109,7 +120,7 @@ export const partidos: Partido[] = [
     miniatura: "https://img.youtube.com/vi/8Z-MvxEt7aU/maxresdefault.jpg",
     local: false,
   },
- 
+
  {
     rival: "Sporting de Gijón",
     resultado: "3-2",
@@ -117,7 +128,7 @@ export const partidos: Partido[] = [
     youtube: "https://www.youtube.com/watch?v=OIYC9Z2_f44",
      miniatura: "https://img.youtube.com/vi/OIYC9Z2_f44/maxresdefault.jpg",
     local: true,}, 
- 
+
   {
     rival: "Cultural Leonesa",
     resultado: "2-1",
@@ -406,4 +417,3 @@ export const partidos: Partido[] = [
     local: false,
   },
 ];
- 
