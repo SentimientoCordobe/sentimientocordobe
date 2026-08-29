@@ -1,5 +1,31 @@
 [
   {
+    "id": 109,
+    "slug": "ania-rueda-prensa-previa-granada-cf",
+    "titulo": "Ania, sobre la previa del Granada: sesión abierta, canteranos arriba y la duda del '9' sin Víctor Sánchez",
+    "resumen": "El técnico asturiano repasó la actualidad del equipo de cara al derbi andaluz del domingo, con la novedad de la lesión de Víctor Sánchez y la pugna por liderar el ataque entre Enol y Percan.",
+    "imagen": "https://img.youtube.com/vi/R5q9jBJZD6Y/maxresdefault.jpg",
+    "fecha": "Fri, 28 Aug 2026 13:00:00 GMT",
+    "contenido": "Iván Ania compareció ante los medios en la previa del Córdoba CF - Granada CF (domingo, 21:30h, Nuevo Arcángel), en una sesión de entrenamiento abierta a la prensa que sirvió también para tomar el pulso a la plantilla a seis días del partido.\n\nEl trabajo del grupo tuvo un tono contenido, más centrado en recuperar sensaciones tras el esfuerzo del amistoso del viernes que en apretar de cara al domingo. En la portería, Alejandro Arévalo, Iker Álvarez y Guilherme Fernandes completaron trabajo específico, mientras que del filial subieron a completar el grupo el propio Arévalo, Diego, Albuera y Ángel Rodríguez. Álex Martín y Albarrán se quedaron al margen de la parte de mayor intensidad.\n\nLa principal novedad sigue siendo la ausencia de Víctor Sánchez. El delantero, autor del primer gol ante el Girona, se retiró en el minuto 51 de aquel partido por molestias en el aductor izquierdo; aunque la lesión es de bajo grado, todo apunta a que no llegará a tiempo para el Granada y queda como duda real para la visita a Sabadell la semana siguiente.\n\nSu baja abre el debate de quién liderará el ataque blanquiverde: la pugna parece disputada entre Enol y Diego Percan, con Ibai Sanz -todavía sin minutos esta temporada- algo más retrasado en las quinielas. Con todo, el técnico asturiano cuenta con un bloque bastante asentado en este arranque de campaña, con pocas piezas realmente en duda más allá de esa referencia arriba.",
+    "fuente": "Rueda de prensa (vídeo) · cordobacf.com · Cordópolis",
+    "url": "https://www.youtube.com/watch?v=R5q9jBJZD6Y&feature=youtu.be",
+    "tipo": "post",
+    "destacada": true
+  },
+  {
+    "id": 110,
+    "slug": "ania-confirma-5-bajas-derbi-granada",
+    "titulo": "Último entrenamiento antes del Córdoba-Granada: Ania confirma 5 bajas para el primer derbi andaluz",
+    "resumen": "Adilson, Jacobo Martí, Fomeyem, El Jebari y Víctor Sánchez no estarán disponibles el domingo (21:30h) en El Arcángel.",
+    "imagen": "/images/noticias/entrenamiento-granada-bajas.jpg",
+    "fecha": "Fri, 28 Aug 2026 10:00:00 GMT",
+    "contenido": "El Córdoba CF completó este viernes su último entrenamiento antes de recibir al Granada CF el domingo (21:30h, Nuevo Arcángel), en el que será el primer derbi andaluz de la temporada. Iván Ania confirmó a la conclusión de la sesión las cinco bajas con las que afronta el encuentro: Adilson, Jacobo Martí, Fomeyem, El Jebari y Víctor Sánchez.\n\nLa ausencia de Víctor Sánchez ya se venía apuntando tras las molestias en el aductor que arrastra desde el partido ante el Girona, pero esta confirmación oficial de Ania la despeja de toda duda: el delantero no estará disponible para el derbi. Junto a él, se caen de la convocatoria otros cuatro futbolistas, lo que obliga al técnico asturiano a hacer encaje de bolillos de cara al once inicial.\n\nEl club acompañó el anuncio con una imagen del grupo en el césped de El Arcángel, entre ellos el propio Fomeyem -uno de los baja- posando junto a varios compañeros antes de retirarse a vestuarios.",
+    "fuente": "Canal Blanquiverde (X)",
+    "url": "https://x.com/canblanquiverde/status/2093593285025530147",
+    "tipo": "post",
+    "destacada": false
+  },
+  {
     "id": 108,
     "slug": "theo-ibai-sanz-amistoso-san-jose-rinconada",
     "titulo": "Théo e Ibai Sanz aprovechan su oportunidad en el amistoso de La Rinconada (1-2)",
@@ -10,7 +36,7 @@
     "fuente": "Cordópolis (elDiario.es)",
     "url": "https://cordopolis.eldiario.es/deportes/ccf/theo-e-ibai-sanz-aprovechan-momento-ensayo-cordoba-cf-rinconada-1-2_129_13466838.html",
     "tipo": "post",
-    "destacada": true
+    "destacada": false
   },
   {
     "id": 107,
