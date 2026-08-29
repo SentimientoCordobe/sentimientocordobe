@@ -7,6 +7,7 @@ import { encuestaResultado, encuestaMVP } from "../data/encuestas"
 import EncuestaResultado from "../components/EncuestaResultado"
 import EncuestaMVP from "../components/EncuestaMVP"
 import ArcoCalifal from "../components/ArcoCalifal"
+import YoutubeEmbed from "../components/YoutubeEmbed"
 import { Twitter, Instagram, Youtube } from "lucide-react"
 import { IoLogoTiktok } from "react-icons/io5"
 
@@ -95,14 +96,11 @@ export default function Index(): JSX.Element {
                 <div className="grid gap-6 sm:grid-cols-2">
                   {videos.slice(0, 2).map((v) => (
                     <div key={v.id} className="space-y-2">
-                      <div className="relative w-full overflow-hidden rounded-lg pt-[56.25%]">
-                        <iframe
-                          src={`https://www.youtube.com/embed/${v.id}`}
-                          title={v.titulo}
-                          allowFullScreen
-                          className="absolute inset-0 h-full w-full"
-                        />
-                      </div>
+                      <YoutubeEmbed
+                        videoId={v.id}
+                        titulo={v.titulo}
+                        miniatura={v.miniatura}
+                      />
                       <h3 className="text-sm font-semibold leading-tight">
                         {v.titulo}
                       </h3>
