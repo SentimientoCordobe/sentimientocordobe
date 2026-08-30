@@ -32,5 +32,12 @@ export const encuestaMVP: Encuesta = {
     { id: "ikeralvarez", label: "Iker Álvarez", dorsal: 1 },
     { id: "Carracedo", label: "Carracedo", dorsal: 23 },
     { id: "ismaruiz", label: "Isma Ruiz", dorsal: 8 },
+    { id: "Rubén Alves", label: "Rubén Alves", dorsal: 16 },
+    { id: "Alex Martín", label: "Alex Martín", dorsal: 4 },
+    { id: "Diarra", label: "Diarra", dorsal: 22 },
+    { id: "Egoitz", label: "Isma Ruiz", dorsal: 27 }
+
+
+    ,
   ],
 };

@@ -16,7 +16,7 @@ const redis = new Redis({
 // y las mismas opciones (mismo orden no es necesario, solo mismos ids).
 const ENCUESTAS: Record<string, string[]> = {
   "resultado-j3-granada": ["local", "empate", "visitante"],
-  "mvp-j3-Granada": ["Eder", "diegobri", "ikeralvarez", "Carracedo", "ismaruiz"],
+  "mvp-j3-Granada": ["Eder", "diegobri", "ikeralvarez", "Carracedo", "ismaruiz", "Rubén Alves", "Alex Martín", "Diarra", "Egoitz"] ,
 };
 
 const NINETY_DAYS = 60 * 60 * 24 * 90;
