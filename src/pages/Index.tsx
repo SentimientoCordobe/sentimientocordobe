@@ -13,7 +13,7 @@ import { IoLogoTiktok } from "react-icons/io5"
 
 export default function Index(): JSX.Element {
   const [portada, ...resto] = noticias
-  const secundarias = resto.slice(0, 4)
+  const secundarias = resto.slice(0, 8)
   const proximoPartido = RESULTADOS.find((j) => j.victoria === null)
 
   return (
