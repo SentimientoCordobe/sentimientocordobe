@@ -14,7 +14,7 @@ export interface Encuesta {
 export const encuestaResultado: Encuesta = {
   id: "resultado-j3-granada",
   pregunta: "Córdoba CF vs Granada CF — Jornada 3, 30 ago (Nuevo Arcángel)",
-  cierre: "30/08/2026",
+  cierre: "31/08/2026",
   opciones: [
     { id: "local", label: "Gana el Córdoba" },
     { id: "empate", label: "Empate" },
@@ -22,15 +22,15 @@ export const encuestaResultado: Encuesta = {
   ],
 };
 
-// Encuesta de MVP del último partido disputado.
+// Encuesta de MVP de partido disputado o a disputar.
 export const encuestaMVP: Encuesta = {
-  id: "mvp-j2-girona",
-  pregunta: "MVP del Córdoba 2-1 Girona (Jornada 2)",
+  id: "mvp-j3-Granada",
+  pregunta: "Quién será el MVP del Córdoba - Granada (Jornada 3)",
   opciones: [
-    { id: "victor", label: "Víctor", dorsal: 25 },
+    { id: "Eder", label: "Eder", dorsal: 28 },
     { id: "diegobri", label: "Diego Bri", dorsal: 11 },
     { id: "ikeralvarez", label: "Iker Álvarez", dorsal: 1 },
-    { id: "theo", label: "Théo", dorsal: 7 },
+    { id: "Carracedo", label: "Carracedo", dorsal: 23 },
     { id: "ismaruiz", label: "Isma Ruiz", dorsal: 8 },
   ],
 };
