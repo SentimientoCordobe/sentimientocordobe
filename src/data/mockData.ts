@@ -18,7 +18,7 @@ export const jugadores: Jugador[] = [
   { nombre: "Álex Martín", posicion: "Defensa central", dorsal: 4, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/small-wp/7703204c-5a3b-48be-9ca7-f8527e89ccfe-44.webp" },
   { nombre: "Juan G.", posicion: "Defensa central", dorsal: 5, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/large/1d28f4c5-7ddf-479a-af5d-41b9b7856351-614.jpg" },
   { nombre: "Fomeyem", posicion: "Defensa central", dorsal: 12, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/small-wp/8b15bce8-3d9a-4939-b62d-21dc2d968d53-189.webp" },
-{ nombre: "Rubén Alves", posicion: "Defensa central", dorsal: 16, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/small-wp/13daa0fc-99d6-423f-9071-bcb9324904dc-680.webp" },
+  { nombre: "Rubén Alves", posicion: "Defensa central", dorsal: 16, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/small-wp/13daa0fc-99d6-423f-9071-bcb9324904dc-680.webp" },
   { nombre: "Albarrán", posicion: "Lateral derecho", dorsal: 21, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/small-wp/c6e21e7c-4dbc-469b-8348-acfa2f47af47-314.webp" },
   { nombre: "Egoitz M.L.", posicion: "Lateral derecho", dorsal: 27, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/large/eeec2f81-e8a9-42e3-bbf2-b19da05580fe-728.jpg" },
   { nombre: "Jacobo M.", posicion: "Lateral derecho", dorsal: 29, grupo: "Defensas", foto: "https://statics-maker.llt-services.com/cor/images/2026/08/18/large/6cbcf464-a344-4bbe-add4-4ac39dffcfad-720.jpg" },
@@ -66,7 +66,7 @@ export interface Jornada {
 export const RESULTADOS: Jornada[] = [
   { jornada: 1, fecha: "16/08/2026", rival: "Burgos CF", estadio: "El Plantío", resultado: "3 - 2", local: false, victoria: false, empate: false },
   { jornada: 2, fecha: "21/08/2026", rival: "Girona FC", estadio: "Nuevo Arcángel", resultado: "2 - 1", local: true, victoria: true, empate: false },
-  { jornada: 3, fecha: "30/08/2026", rival: "Granada CF", estadio: "Nuevo Arcángel", resultado: "", local: true, victoria: null, empate: false },
+  { jornada: 3, fecha: "30/08/2026", rival: "Granada CF", estadio: "Nuevo Arcángel", resultado: "1 - 3", local: true, victoria: null, empate: false },
   { jornada: 4, fecha: "07/09/2026", rival: "CE Sabadell", estadio: "Nova Creu Alta", resultado: "", local: false, victoria: null, empate: false },
   { jornada: 5, fecha: "13/09/2026", rival: "UD Almería", estadio: "Nuevo Arcángel", resultado: "", local: true, victoria: null, empate: false },
   { jornada: 6, fecha: "20/09/2026", rival: "Albacete Balompié", estadio: "Carlos Belmonte", resultado: "", local: false, victoria: null, empate: false },
