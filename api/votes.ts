@@ -15,8 +15,8 @@ const redis = new Redis({
 // src/data/encuestas.ts, actualiza también este objeto con el mismo id
 // y las mismas opciones (mismo orden no es necesario, solo mismos ids).
 const ENCUESTAS: Record<string, string[]> = {
-  "resultado-j3-granada": ["local", "empate", "visitante"],
-  "mvp-j3-Granada": ["Eder", "diegobri", "ikeralvarez", "Carracedo", "ismaruiz", "Rubén Alves", "Alex Martín", "Diarra", "Egoitz"] ,
+  "resultado-j4-Sabadell": ["local", "empate", "visitante"],
+  "mvp-j3-Granada": ["Eder", "Percan", "Iker Álvarez", "Kevin Medina", "Enol", "Rubén Alves", "Juanito Gutiérrez", "Diarra", "Budesca"] ,
 };
 
 const NINETY_DAYS = 60 * 60 * 24 * 90;

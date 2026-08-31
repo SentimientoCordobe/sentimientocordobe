@@ -12,30 +12,30 @@ export interface Encuesta {
 }
 
 export const encuestaResultado: Encuesta = {
-  id: "resultado-j3-granada",
-  pregunta: "Córdoba CF vs Granada CF — Jornada 3, 30 ago (Nuevo Arcángel)",
-  cierre: "31/08/2026",
+  id: "resultado-j4-Sabadell",
+  pregunta: "Sabadell vs Córdoba CF — Jornada 4, 7 sep (Nueva Cruz Alta)",
+  cierre: "7/09/2026",
   opciones: [
-    { id: "local", label: "Gana el Córdoba" },
+    { id: "local", label: "Gana el Sabadell" },
     { id: "empate", label: "Empate" },
-    { id: "visitante", label: "Gana el Granada" },
+    { id: "visitante", label: "Gana el Córdoba" },
   ],
 };
 
 // Encuesta de MVP de partido disputado o a disputar.
 export const encuestaMVP: Encuesta = {
   id: "mvp-j3-Granada",
-  pregunta: "Quién será el MVP del Córdoba - Granada (Jornada 3)",
+  pregunta: "Quién fue el PEOR del Córdoba - Granada (Jornada 3)",
   opciones: [
     { id: "Eder", label: "Eder", dorsal: 28 },
-    { id: "diegobri", label: "Diego Bri", dorsal: 11 },
-    { id: "ikeralvarez", label: "Iker Álvarez", dorsal: 1 },
-    { id: "Carracedo", label: "Carracedo", dorsal: 23 },
-    { id: "ismaruiz", label: "Isma Ruiz", dorsal: 8 },
+    { id: "Percan", label: "Percan", dorsal: 9 },
+    { id: "Iker Álvarez", label: "Iker Álvarez", dorsal: 1 },
+    { id: "Kevin Medina", label: "Kevin Medina", dorsal: 10 },
+    { id: "Enol", label: "Enol", dorsal: 18 },
     { id: "Rubén Alves", label: "Rubén Alves", dorsal: 16 },
-    { id: "Alex Martín", label: "Alex Martín", dorsal: 4 },
+    { id: "Juanito Gutiérrez", label: "Juanito Gutiérrez", dorsal: 4 },
     { id: "Diarra", label: "Diarra", dorsal: 22 },
-    { id: "Egoitz", label: "Egoitz", dorsal: 27 }
+    { id: "Budesca", label: "Budesca", dorsal: 30 } 
 
 
     ,
