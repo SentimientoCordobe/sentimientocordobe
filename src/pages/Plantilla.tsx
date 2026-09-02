@@ -1,4 +1,4 @@
-import { jugadores } from "../data/Jugadores";
+import { jugadores } from "../data/jugadores";
 import { jugadoresCordobaB, entrenadorCordobaB } from "../data/cordobaB";
 import { jugadorasFemenino } from "../data/femenino";
 import { User } from "lucide-react";

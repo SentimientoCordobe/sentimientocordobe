@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { jugadores } from "../data/Jugadores";
+import { jugadores } from "../data/jugadores";
 import { ArrowLeft, User, Shield, Hash } from "lucide-react";
 
 export default function JugadorDetalle() {
