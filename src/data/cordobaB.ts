@@ -42,4 +42,5 @@ export const jugadoresCordobaB: JugadorFilial[] = [
   { nombre: "Viti", posicion: "Delantero", grupo: "Delanteros", edad: 19 },
   { nombre: "Hugo Martínez", posicion: "Delantero", grupo: "Delanteros", edad: 20 },
   { nombre: "Naser Dajani", posicion: "Delantero", grupo: "Delanteros", edad: 19 },
+  { nombre: "Jens Olsson", posicion: "Delantero", grupo: "Delanteros", edad: 20 }
 ];

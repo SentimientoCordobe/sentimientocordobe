@@ -1,4 +1,4 @@
-import { RESULTADOS } from "../data/mockData";
+import { RESULTADOS } from "../data/Jugadores";
 import { MapPin } from "lucide-react";
 
 type Estado = "victoria" | "empate" | "derrota" | "pendiente";
