@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
 import { videos } from "../data/videos"
 import { clasificacion } from "../data/clasificacion"
 import { noticias } from "../data/noticias"
@@ -10,43 +11,94 @@ import ArcoCalifal from "../components/ArcoCalifal"
 import YoutubeEmbed from "../components/YoutubeEmbed"
 import { Twitter, Instagram, Youtube } from "lucide-react"
 import { IoLogoTiktok } from "react-icons/io5"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
+  type CarouselApi,
+} from "../components/ui/carousel"
+
+function HeroCarousel({ slides }: { slides: typeof noticias }) {
+  const [api, setApi] = useState<CarouselApi>();
+  const [actual, setActual] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+    setActual(api.selectedScrollSnap());
+    api.on("select", () => setActual(api.selectedScrollSnap()));
+  }, [api]);
+
+  return (
+    <Carousel setApi={setApi} opts={{ loop: true }} className="group/hero relative">
+      <CarouselContent className="ml-0">
+        {slides.map((n) => (
+          <CarouselItem key={n.id} className="pl-0">
+            <Link to={`/noticia/${n.slug}`} className="group block">
+              <div className="relative">
+                <div className="h-[70vh] max-h-[560px] min-h-[340px] w-full overflow-hidden">
+                  <img
+                    src={n.imagen}
+                    alt={n.titulo}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent" />
+                </div>
+
+                <div className="absolute inset-x-0 bottom-0 px-4 pb-10 md:pb-14">
+                  <div className="container mx-auto max-w-3xl px-0">
+                    <span className="inline-block rounded-sm bg-secondary px-3 py-1 font-display text-xs font-bold uppercase tracking-widest text-secondary-foreground">
+                      {n.fuente ?? "Última hora"}
+                    </span>
+                    <h1 className="mt-3 font-display text-3xl font-bold leading-[1.05] text-primary-foreground md:text-5xl">
+                      {n.titulo}
+                    </h1>
+                    <p className="mt-3 hidden max-w-xl text-primary-foreground/80 md:block">
+                      {n.resumen}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+
+      {slides.length > 1 && (
+        <>
+          <CarouselPrevious className="left-4 border-none bg-primary-foreground/90 text-primary opacity-0 transition-opacity group-hover/hero:opacity-100 hover:bg-primary-foreground" />
+          <CarouselNext className="right-4 border-none bg-primary-foreground/90 text-primary opacity-0 transition-opacity group-hover/hero:opacity-100 hover:bg-primary-foreground" />
+
+          <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2">
+            {slides.map((n, i) => (
+              <button
+                key={n.id}
+                type="button"
+                aria-label={`Ir a la noticia ${i + 1}`}
+                onClick={() => api?.scrollTo(i)}
+                className={`h-2 rounded-full transition-all ${
+                  i === actual ? "w-6 bg-secondary" : "w-2 bg-primary-foreground/50"
+                }`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </Carousel>
+  );
+}
 
 export default function Index(): JSX.Element {
-  const [portada, ...resto] = noticias
+  const [portada, segunda, tercera, ...resto] = noticias
+  const slidesHero = [portada, segunda, tercera].filter(Boolean)
   const secundarias = resto.slice(0, 8)
   const proximoPartido = RESULTADOS.find((j) => j.victoria === null)
 
   return (
     <div>
-      {/* ── Héroe: la noticia principal a ancho completo ── */}
-      {portada && (
-        <Link to={`/noticia/${portada.slug}`} className="group block">
-          <div className="relative">
-            <div className="h-[70vh] max-h-[560px] min-h-[340px] w-full overflow-hidden">
-              <img
-                src={portada.imagen}
-                alt={portada.titulo}
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent" />
-            </div>
-
-            <div className="absolute inset-x-0 bottom-0 px-4 pb-8 md:pb-12">
-              <div className="container mx-auto max-w-3xl px-0">
-                <span className="inline-block rounded-sm bg-secondary px-3 py-1 font-display text-xs font-bold uppercase tracking-widest text-secondary-foreground">
-                  {portada.fuente ?? "Última hora"}
-                </span>
-                <h1 className="mt-3 font-display text-3xl font-bold leading-[1.05] text-primary-foreground md:text-5xl">
-                  {portada.titulo}
-                </h1>
-                <p className="mt-3 hidden max-w-xl text-primary-foreground/80 md:block">
-                  {portada.resumen}
-                </p>
-              </div>
-            </div>
-          </div>
-        </Link>
-      )}
+      {/* ── Héroe: carrusel con las 3 noticias más recientes ── */}
+      {slidesHero.length > 0 && <HeroCarousel slides={slidesHero} />}
 
       <ArcoCalifal colorClassName="bg-primary" />
 
