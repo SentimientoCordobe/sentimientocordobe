@@ -1,5 +1,31 @@
 [
   {
+    "id": 130,
+    "slug": "posible-once-cordoba-almeria-jornada-5",
+    "titulo": "Posible once del Córdoba ante el Almería: Enol releva a Percan en punta",
+    "resumen": "Repasamos el hipotético 4-3-3 de Ania para el derbi andaluz del sábado, con Nélson Monte descartado por cláusula contractual al ser cedido por su rival de turno.",
+    "imagen": "/images/noticias/posible-once-almeria.svg",
+    "fecha": "Fri, 11 Sep 2026 18:00:00 GMT",
+    "contenido": "De cara al partido de este sábado (20:50h, Nuevo Arcángel) ante la UD Almería, repasamos un posible once de Iván Ania, manteniendo el mismo bloque que saltó al césped en Sabadell salvo un cambio en la delantera: Enol entraría por Percan como referencia ofensiva.\n\nEl once manejado sería: Iker; Tasende, Álex Martín, Rubén Alves, Budesca; Diarra, Isma Ruiz, Eder; Carracedo, Enol, Bri.\n\nUn apunte importante sobre la defensa: Nélson Monte, el central llegado cedido desde la propia UD Almería, no podrá jugar este partido por una cláusula contractual habitual en este tipo de cesiones, que impide al futbolista medirse a su club de origen. Es solo una alineación probable, sin confirmar por el técnico asturiano.",
+    "fuente": "Sentimiento Cordobé",
+    "url": "https://sentimientocordobe.vercel.app",
+    "tipo": "post",
+    "destacada": false
+  },
+  {
+    "id": 129,
+    "slug": "posible-convocatoria-cordoba-almeria-jornada-5",
+    "titulo": "Posibles convocados del Córdoba para el Almería, con la duda del regreso de Víctor Sánchez",
+    "resumen": "Nélson Monte, descartado por cláusula ante su propio equipo cedente. Víctor Sánchez y Salim El Jebari podrían reaparecer en la lista tras superar sus respectivas lesiones.",
+    "imagen": "/images/noticias/posible-convocatoria-almeria.svg",
+    "fecha": "Fri, 11 Sep 2026 17:00:00 GMT",
+    "contenido": "El Córdoba CF prepara la lista de convocados para el partido de este sábado (20:50h, Nuevo Arcángel) ante la UD Almería, correspondiente a la jornada 5 de LALIGA Hypermotion, con dos novedades que apuntan a ser positivas: tanto Víctor Sánchez como Salim El Jebari podrían entrar en la convocatoria tras superar sus respectivas lesiones, el primero para volver a estar disponible y el segundo para debutar esta temporada en una lista de convocados.\n\nLa gran novedad negativa ya es segura: Nélson Monte, el central cedido por la propia UD Almería hace apenas unos días, no podrá jugar ni por tanto ser convocado para este partido por una cláusula contractual que impide a los futbolistas cedidos enfrentarse a su club de origen durante la cesión.\n\nEl resto de la lista se espera similar a la de las últimas jornadas, con el grueso de la plantilla disponible salvo los futbolistas que arrastran lesiones de más largo recorrido.",
+    "fuente": "COPE Córdoba · Sentimiento Cordobé",
+    "url": "https://www.cope.es/emisoras/andalucia/cordoba-provincia/cordoba/deportes-cordoba/noticias/horario-ver-escuchar-cordoba-cf-u-d-almeria-jornada-5a-liga-hypermotion-20260911_3434867.html",
+    "tipo": "post",
+    "destacada": false
+  },
+  {
     "id": 128,
     "slug": "cordoba-problema-goles-minutos-finales",
     "titulo": "Continúa el problema en los últimos minutos: 4 jornadas, 4 partidos recibiendo goles en el tramo final",
