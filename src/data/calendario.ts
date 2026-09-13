@@ -22,7 +22,7 @@ export const RESULTADOS: Jornada[] = [
   { jornada: 3, fecha: "30/08/2026", rival: "Granada CF", estadio: "Nuevo Arcángel", resultado: "1 - 3", local: true, victoria: false, empate: false },
   { jornada: 4, fecha: "07/09/2026", rival: "CE Sabadell", estadio: "Nova Creu Alta", resultado: "3 - 2", local: false, victoria: false, empate: false },
   { jornada: 5, fecha: "12/09/2026", rival: "UD Almería", estadio: "Nuevo Arcángel", resultado: "0 - 2", local: true, victoria: false, empate: false },
-  { jornada: 6, fecha: "20/09/2026", rival: "Albacete Balompié", estadio: "Carlos Belmonte", resultado: "", local: false, victoria: null, empate: false },
+  { jornada: 6, fecha: "18/09/2026", rival: "Albacete Balompié", estadio: "Carlos Belmonte", resultado: "", local: false, victoria: null, empate: false },
   { jornada: 7, fecha: "27/09/2026", rival: "Real Valladolid", estadio: "José Zorrilla", resultado: "", local: false, victoria: null, empate: false },
   { jornada: 8, fecha: "04/10/2026", rival: "CD Tenerife", estadio: "Nuevo Arcángel", resultado: "", local: true, victoria: null, empate: false },
   { jornada: 9, fecha: "11/10/2026", rival: "CD Eldense", estadio: "Nuevo Pepico Amat", resultado: "", local: false, victoria: null, empate: false },
