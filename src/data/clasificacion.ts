@@ -1,5 +1,6 @@
 // ── Calendario del Córdoba CF (temporada 2026/27, LALIGA Hypermotion) ──
-export interface Jornada {
+export interface EquipoClasificacion 
+{  
   jornada: number;
   fecha: string;
   rival: string;
@@ -16,7 +17,7 @@ export interface Jornada {
 // Resultados confirmados a 27/08/2026: J1 y J2. El resto son fechas y
 // rivales ya oficiales; actualiza el campo "resultado" jornada a jornada
 // según se disputen.
-export const RESULTADOS: Jornada[] = [
+export const clasificacion: EquipoClasificacion[] = [  
   { jornada: 1, fecha: "16/08/2026", rival: "Burgos CF", estadio: "El Plantío", resultado: "3 - 2", local: false, victoria: false, empate: false },
   { jornada: 2, fecha: "21/08/2026", rival: "Girona FC", estadio: "Nuevo Arcángel", resultado: "2 - 1", local: true, victoria: true, empate: false },
   { jornada: 3, fecha: "30/08/2026", rival: "Granada CF", estadio: "Nuevo Arcángel", resultado: "1 - 3", local: true, victoria: false, empate: false },
