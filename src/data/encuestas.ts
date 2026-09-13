@@ -12,13 +12,13 @@ export interface Encuesta {
 }
 
 export const encuestaResultado: Encuesta = {
-  id: "resultado-j5-Almeria",
-  pregunta: "Córdoba CF vs Almeria — Jornada 5 , 12 sep (Nuevo Arcángel)",
-  cierre: "12/09/2026",
+  id: "resultado-j6-Albacete",
+  pregunta: "Albacete vs Córdoba CF — Jornada 6 , 19 sep (20:30) Estadio Carlos Belmonte",
+  cierre: "19/09/2026",
   opciones: [
-    { id: "local", label: "Gana el Córdoba" },
+    { id: "local", label: "Gana el Albacete" },
     { id: "empate", label: "Empate" },
-    { id: "visitante", label: "Gana el Almeria" },
+    { id: "visitante", label: "Gana el Córdoba" },
   ],
 };
 
