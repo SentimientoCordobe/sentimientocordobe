@@ -10,6 +10,14 @@ export interface Video {
 export const videos: Video[] = [
   
   {
+    id: "cz6Hk-8--Xc",
+    titulo: "CÓRDOBA CF 0 - 2 UD ALMERÍA | RESUMEN LALIGA HYPERMOTION",
+    resumen: "El Almería rompió su mala racha fuera de casa con goles de Cipenga y Thalys, en un partido dominado en la primera mitad por un Córdoba que no pudo aprovechar sus ocasiones.",
+    miniatura: "https://img.youtube.com/vi/cz6Hk-8--Xc/maxresdefault.jpg",
+    fecha: "12 Sep 2026",
+    youtube: "https://www.youtube.com/watch?v=cz6Hk-8--Xc"
+  },
+  {
     id: "GG660uVUp_Q",
     titulo: "ASÍ se VIVE un PARTIDO en PALCO VIP del CÓRDOBA CF",
     resumen: "Viví una nueva experiencia viendo al Córdoba CF desde el Palco VIP del Estadio El Arcángel. En este vídeo enseño cómo es el palco VIP, el ambiente del partido Córdoba CF vs Real Sociedad B (0-2) y cómo se vivió el encuentro desde dentro. ¡No te lo pierdas!",
