@@ -9,6 +9,7 @@ export interface EquipoClasificacion
   local: boolean;
   victoria: boolean | null;
   empate: boolean; // true para empate; para derrota/pendiente usar victoria en false/null
+  esCordoba?: boolean;
 }
 
 // Calendario completo de las 42 jornadas de LALIGA Hypermotion 2026/27

@@ -12,11 +12,19 @@ export interface Partido {
 // ══════════════════════════════════════════════════════════════════════
 export const partidosTemporada2627: Partido[] = [
   {
+    rival: "UD Almería",
+    resultado: "0-2",
+    fecha: "12 Sep 2026",
+    youtube: "https://www.youtube.com/watch?v=cz6Hk-8--Xc",
+    miniatura: "https://img.youtube.com/vi/cz6Hk-8--Xc/maxresdefault.jpg",
+    local: true,
+  },
+  {
     rival: "Sabadell",
     resultado: "3-2",
     fecha: "07 Sep 2026",
     youtube: "https://youtu.be/HQjOORSVTxM?si=VpXLSGDEJ97DhZuR",
-    miniatura: "https://www.youtube.com/watch?v=HQjOORSVTxM&pp=ygUdcmVzdW1lbiBkZWwgQ8OzcmRvYmEgU2FiYWRlbGw%3D",
+    miniatura: "https://img.youtube.com/vi/HQjOORSVTxM/maxresdefault.jpg",
     local: false,
   },
   {
