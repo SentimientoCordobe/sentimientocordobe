@@ -24,8 +24,8 @@ export const encuestaResultado: Encuesta = {
 
 // Encuesta de MVP de partido disputado o a disputar.
 export const encuestaMVP: Encuesta = {
-  id: "mvp-j4-Sabadell",
-  pregunta: "Quién fue el PEOR del Sabadell - Córdoba (Jornada 4)",
+  id: "mvp-j5-Almeria",
+  pregunta: "Quién fue el PEOR del Córdoba - Almeria (Jornada 5)",
   opciones: [
     { id: "Eder", label: "Eder", dorsal: 28 },
     { id: "Percan", label: "Percan", dorsal: 9 },
