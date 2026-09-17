@@ -1,4 +1,31 @@
-[
+[[
+  {
+    "id": 136,
+    "slug": "nelson-monte-vengo-maxima-ilusion-ayudar-equipo",
+    "titulo": "Nélson Monte: \"Vengo con la máxima ilusión para ayudar al equipo\"",
+    "resumen": "El central portugués fue presentado oficialmente como nuevo jugador del Córdoba CF, destacando su polivalencia en el centro de la defensa y su papel de veterano dentro del vestuario.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2026/09/16/large/7a6cb930-c798-46ad-82ac-03191b5db508-562.JPG",
+    "fecha": "Wed, 16 Sep 2026 12:00:00 GMT",
+    "contenido": "Nélson Monte fue presentado este miércoles como nuevo jugador del Córdoba CF, mostrando su ilusión por afrontar esta nueva etapa y su convencimiento de poder aportar experiencia a una plantilla joven. El central explicó que su llegada se cerró en las últimas horas del mercado, tras valorar rápidamente la propuesta junto a su familia: \"vengo con la máxima ilusión para ayudar al equipo\", señaló, reconociendo que la decisión fue precipitada pero que la dimensión y la historia del club le convencieron para dar el paso.\n\nEl futbolista portugués destacó su polivalencia en el centro de la defensa, asegurando sentirse cómodo tanto en el perfil derecho como en el izquierdo, posiciones que ya ha ocupado a lo largo de su trayectoria en Portugal y en sus etapas en Málaga y Almería. Sobre su papel dentro del vestuario, se definió como un futbolista dispuesto a ejercer de hermano mayor, aportando la experiencia acumulada en su carrera y transmitiendo calma en los momentos de mayor dificultad.\n\nMonte se mostró además plenamente identificado con la propuesta futbolística de Iván Ania, basada en una línea defensiva adelantada, la salida de balón y la presión, una idea con la que aseguró estar familiarizado. El central valoró positivamente el reto de competir en un escenario exigente como el Nuevo Arcángel, destacando la calidad y la ambición que percibe en la plantilla para competir en LALIGA Hypermotion.",
+    "fuente": "Web oficial Córdoba CF",
+    "url": "https://www.cordobacf.com/noticias/nelson-monte-vengo-con-la-maxima-ilusion-para-ayudar-al-equipo",
+    "tipo": "post",
+    "destacada": true
+  },
+  {
+    "id": 135,
+    "slug": "monterrubio-mensaje-tranquilidad-confianza-absoluta",
+    "titulo": "Monterrubio, CEO del Córdoba CF: \"Lanzamos un mensaje de tranquilidad, tenemos confianza absoluta\"",
+    "resumen": "Antes de la presentación de Nélson Monte, el dirigente blanquiverde quiso dirigirse a la afición tras el mal arranque liguero, pidiendo unidad y asumiendo los errores cometidos hasta ahora.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2026/09/16/large/7a6cb930-c798-46ad-82ac-03191b5db508-562.JPG",
+    "fecha": "Wed, 16 Sep 2026 11:30:00 GMT",
+    "contenido": "El CEO del Córdoba CF, Antonio Fernández Monterrubio, quiso lanzar un mensaje de tranquilidad, confianza y unidad al cordobesismo tras los malos resultados del inicio liguero, aprovechando el acto de presentación de Nélson Monte como nuevo jugador blanquiverde para dirigirse a la afición.\n\nEl dirigente reconoció abiertamente la insatisfacción del club con el arranque de temporada, admitiendo que esperaban sumar más puntos de los que llevan hasta ahora, aunque remarcó: \"tenemos confianza absoluta\". Monterrubio también asumió que en la entidad son conscientes de los errores cometidos y que están trabajando para solucionarlos, defendiendo al mismo tiempo el potencial de una plantilla joven que, a su juicio, no carece de talento pese a los numerosos cambios acometidos este verano.\n\nEl CEO blanquiverde entiende el nivel de exigencia y autocrítica de la afición, señalando que en el club comparten esas mismas críticas y decepciones, pero pidió calma porque, en su opinión, el equipo todavía no ha alcanzado el nivel real del que dispone. Monterrubio cerró su intervención insistiendo en que queda mucho campeonato por delante y pidiendo unidad al cordobesismo, convencido de que remando todos en la misma dirección será mucho más fácil revertir la situación.",
+    "fuente": "Web oficial Córdoba CF",
+    "url": "https://www.cordobacf.com/noticias/monterrubio-ceo-del-cordoba-cf-lanzamos-un-mensaje-de-tranquilidad-tenemos-confianza-absoluta",
+    "tipo": "post",
+    "destacada": false
+  },
+  
   {
     "id": 134,
     "slug": "tasende-enciende-alarmas-defensa-cordoba",
