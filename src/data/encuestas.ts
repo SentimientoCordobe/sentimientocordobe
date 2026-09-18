@@ -25,9 +25,9 @@ export const encuestaResultado: Encuesta = {
 // Encuesta de MVP de partido disputado o a disputar.
 export const encuestaMVP: Encuesta = {
   id: "mvp-j5-Almeria",
-  pregunta: "Quién fue el PEOR del Córdoba - Almeria (Jornada 5)",
+  pregunta: "Quién fue el mejor del Albacete - Córdoba (Jornada 6)",
   opciones: [
-    { id: "Eder", label: "Eder", dorsal: 28 },
+    { id: "Isma", label: "Isma", dorsal: 8 },
     { id: "Percan", label: "Percan", dorsal: 9 },
     { id: "Kevin Medina", label: "Kevin Medina", dorsal: 10 },
     { id: "Enol", label: "Enol", dorsal: 18 },
