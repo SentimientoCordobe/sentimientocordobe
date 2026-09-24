@@ -35,6 +35,6 @@ export const encuestaMVP: Encuesta = {
     { id: "Diarra", label: "Diarra", dorsal: 22 },
     { id: "Budesca", label: "Budesca", dorsal: 30 },
     { id: "Eder", label: "Eder García", dorsal: 28},
-    { id: "Adnane", label "Adnane Ghailan", dorsal: 14}
+    { id: "Adnane", label: "Adnane Ghailan", dorsal: 14}
   ],
 };
