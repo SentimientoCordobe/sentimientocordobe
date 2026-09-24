@@ -12,11 +12,11 @@ export interface Encuesta {
 }
 
 export const encuestaResultado: Encuesta = {
-  id: "resultado-j6-Albacete",
-  pregunta: "Albacete vs Córdoba CF — Jornada 6 , 19 sep (20:30) Estadio Carlos Belmonte",
-  cierre: "19/09/2026",
+  id: "resultado-j7-Valladolid",
+  pregunta: "Valladolid vs Córdoba CF — Jornada 7 , 27 sep (14:00) Estadio Carlos Belmonte",
+  cierre: "27/09/2026",
   opciones: [
-    { id: "local", label: "Gana el Albacete" },
+    { id: "local", label: "Gana el Valladolid" },
     { id: "empate", label: "Empate" },
     { id: "visitante", label: "Gana el Córdoba" },
   ],
@@ -34,5 +34,7 @@ export const encuestaMVP: Encuesta = {
     { id: "Rubén Alves", label: "Rubén Alves", dorsal: 16 },
     { id: "Diarra", label: "Diarra", dorsal: 22 },
     { id: "Budesca", label: "Budesca", dorsal: 30 },
+    { id: "Eder", label: "Eder García", dorsal: 28},
+    { id: "Adnane", label "Adnane Ghailan", dorsal: 14}
   ],
 };

@@ -13,9 +13,7 @@ export interface Jornada {
 // Calendario completo de las 42 jornadas de LALIGA Hypermotion 2026/27
 // (22 equipos, liga a doble vuelta → 42 jornadas, no 41). Fuente: LALIGA
 // oficial (laliga.com/clubes/cordoba-cf/proximos-partidos) y RFEF.
-// Resultados confirmados a 27/08/2026: J1 y J2. El resto son fechas y
-// rivales ya oficiales; actualiza el campo "resultado" jornada a jornada
-// según se disputen.
+
 export const RESULTADOS: Jornada[] = [
   { jornada: 1, fecha: "16/08/2026", rival: "Burgos CF", estadio: "El Plantío", resultado: "3 - 2", local: false, victoria: false, empate: false },
   { jornada: 2, fecha: "21/08/2026", rival: "Girona FC", estadio: "Nuevo Arcángel", resultado: "2 - 1", local: true, victoria: true, empate: false },
