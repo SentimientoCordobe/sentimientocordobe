@@ -12,6 +12,13 @@ export interface Partido {
 // ══════════════════════════════════════════════════════════════════════
 export const partidosTemporada2627: Partido[] = [
   {
+    rival: "Valladolid",
+    resultado: "3-1",
+    fecha: "26 Sep 2026",
+    youtube: "https://www.youtube.com/watch?v=fFjWjp6k4MM",
+    miniatura: "https://img.youtube.com/vi/fFjWjp6k4MM/maxresdefault.jpg",
+    local: false,
+  },{
     rival: "UD Almería",
     resultado: "0-2",
     fecha: "12 Sep 2026",

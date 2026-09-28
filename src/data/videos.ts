@@ -9,13 +9,21 @@ export interface Video {
 
 export const videos: Video[] = [
   
+   {
+    id: "CVlrXw9rSWE",
+    titulo: " VALLADOLID 3 - 1 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
+    resumen: "El Valladolid rompió su mala racha",
+    miniatura: "https://img.youtube.com/vi/CVlrXw9rSWE/maxresdefault.jpg",
+    fecha: "27 Sep 2026",
+    youtube: "https://www.youtube.com/watch?v=CVlrXw9rSWE"
+  },
   {
-    id: "cz6Hk-8--Xc",
-    titulo: "CÓRDOBA CF 0 - 2 UD ALMERÍA | RESUMEN LALIGA HYPERMOTION",
-    resumen: "El Almería rompió su mala racha fuera de casa con goles de Cipenga y Thalys, en un partido dominado en la primera mitad por un Córdoba que no pudo aprovechar sus ocasiones.",
-    miniatura: "https://img.youtube.com/vi/cz6Hk-8--Xc/maxresdefault.jpg",
-    fecha: "12 Sep 2026",
-    youtube: "https://www.youtube.com/watch?v=cz6Hk-8--Xc"
+    id: "ywOyR9ZtTIg",
+    titulo: " ALBACETE 1- 2 CÓRDOBA CF | RESUMEN LALIGA HYPERMOTION",
+    resumen: "El CÓRDOBA firmó su primera victoria en casa",
+    miniatura: "https://img.youtube.com/vi/ywOyR9ZtTIg/maxresdefault.jpg",
+    fecha: "18 Sep 2026",
+    youtube: "https://www.youtube.com/watch?v=ywOyR9ZtTIg"
   },
   {
     id: "GG660uVUp_Q",
