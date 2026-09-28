@@ -16,9 +16,9 @@ export const encuestaResultado: Encuesta = {
   pregunta: "Córdoba CF VS TENERIFE — Jornada 8 , 5 oct (20:30) Estadio NUEVO ARCÁNGEL",
   cierre: "27/09/2026",
   opciones: [
-    { id: "local", label: "Gana el Valladolid" },
+    { id: "local", label: "Gana el Córdoba" },
     { id: "empate", label: "Empate" },
-    { id: "visitante", label: "Gana el Córdoba" },
+    { id: "visitante", label: "Gana el Tenerife" },
   ],
 };
 
