@@ -7,8 +7,8 @@ const redis = new Redis({
 });
 
 const ENCUESTAS: Record<string, string[]> = {
-  "resultado-j7 Valladolid": ["local", "empate", "visitante"],
-  "mvp-j6-Albacete": ["Guilherme", "Budesca", "Isma Ruiz", "Carracedo", "Rubén Alves", "Eder", "Alex Martín", "Enol", "Percan"],
+  "resultado-j8 TENERIFE": ["local", "empate", "visitante"],
+  "mvp-j7-VALLADOLID": ["Guilherme", "Budesca", "Isma Ruiz", "Carracedo", "Rubén Alves", "Eder", "Alex Martín", "Enol", "Percan"],
 };
 
 const NINETY_DAYS = 60 * 60 * 24 * 90;

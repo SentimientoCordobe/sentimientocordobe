@@ -12,8 +12,8 @@ export interface Encuesta {
 }
 
 export const encuestaResultado: Encuesta = {
-  id: "resultado-j7-Valladolid",
-  pregunta: "Valladolid vs Córdoba CF — Jornada 7 , 27 sep (14:00) Estadio Carlos Belmonte",
+  id: "resultado-j8-TENERIFE",
+  pregunta: "Córdoba CF VS TENERIFE — Jornada 8 , 5 oct (20:30) Estadio NUEVO ARCÁNGEL",
   cierre: "27/09/2026",
   opciones: [
     { id: "local", label: "Gana el Valladolid" },
