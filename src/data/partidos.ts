@@ -12,6 +12,14 @@ export interface Partido {
 // ══════════════════════════════════════════════════════════════════════
 export const partidosTemporada2627: Partido[] = [
   {
+    rival: "CD Tenerife",
+    resultado: "3-2",
+    fecha: "05 Oct 2026",
+    youtube: "https://www.youtube.com/watch?v=aLp7Gjc-TGY",
+    miniatura: "https://img.youtube.com/vi/aLp7Gjc-TGY/maxresdefault.jpg",
+    local: true,
+  },
+  {
     rival: "Valladolid",
     resultado: "3-1",
     fecha: "26 Sep 2026",

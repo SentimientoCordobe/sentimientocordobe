@@ -6,8 +6,16 @@ export interface Video {
   fecha: string;
   youtube: string;
 }
-
+ 
 export const videos: Video[] = [
+  {
+    id: "aLp7Gjc-TGY",
+    titulo: "CÓRDOBA CF 3 - 2 CD TENERIFE | RESUMEN LALIGA HYPERMOTION",
+    resumen: "Jornada 8 · Victoria 3-2 ante el Tenerife en el Nuevo Arcángel, con goles de Eder, Percan e Isma Ruiz.",
+    miniatura: "https://img.youtube.com/vi/aLp7Gjc-TGY/maxresdefault.jpg",
+    fecha: "05 Oct 2026",
+    youtube: "https://www.youtube.com/watch?v=aLp7Gjc-TGY"
+  },
   
    {
     id: "CVlrXw9rSWE",
@@ -58,3 +66,7 @@ export const videos: Video[] = [
     youtube: "https://www.youtube.com/watch?v=wlfQHoZOccs"
   }
 ]
+ 
+
+
+
