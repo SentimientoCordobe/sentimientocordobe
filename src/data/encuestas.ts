@@ -12,29 +12,28 @@ export interface Encuesta {
 }
 
 export const encuestaResultado: Encuesta = {
-  id: "resultado-j8-TENERIFE",
-  pregunta: "Córdoba CF VS TENERIFE — Jornada 8 , 5 oct (20:30) Estadio NUEVO ARCÁNGEL",
-  cierre: "27/09/2026",
+  id: "resultado-j9-Eldense",
+  pregunta: "CD Eldense vs Córdoba CF — Jornada 9, sáb 10 oct, Nuevo Pepico Amat",
+  cierre: "10/10/2026",
   opciones: [
-    { id: "local", label: "Gana el Córdoba" },
+    { id: "local", label: "Gana el Eldense" },
     { id: "empate", label: "Empate" },
-    { id: "visitante", label: "Gana el Tenerife" },
+    { id: "visitante", label: "Gana el Córdoba" },
   ],
 };
 
-// Encuesta de MVP de partido disputado o a disputar.
+// Encuesta de MVP del último partido disputado (Córdoba 3-2 Tenerife, J8).
 export const encuestaMVP: Encuesta = {
-  id: "mvp-j5-Almeria",
-  pregunta: "Quién fue el peor del Valladolid - Córdoba (Jornada 7)",
+  id: "mvp-j8-Tenerife",
+  pregunta: "Quién fue el MEJOR del Córdoba - Tenerife (Jornada 8)",
   opciones: [
-    { id: "Isma", label: "Isma", dorsal: 8 },
+    { id: "Isma Ruiz", label: "Isma Ruiz", dorsal: 8 },
     { id: "Percan", label: "Percan", dorsal: 9 },
-    { id: "Kevin Medina", label: "Kevin Medina", dorsal: 10 },
-    { id: "Enol", label: "Enol", dorsal: 18 },
-    { id: "Rubén Alves", label: "Rubén Alves", dorsal: 16 },
-    { id: "Diarra", label: "Diarra", dorsal: 22 },
+    { id: "Eder", label: "Eder", dorsal: 28 },
+    { id: "Diego Bri", label: "Diego Bri", dorsal: 11 },
+    { id: "Adnane Ghailan", label: "Adnane Ghailan", dorsal: 14 },
     { id: "Budesca", label: "Budesca", dorsal: 30 },
-    { id: "Alex", label: "Alex Martín",  dorsal: 4},
-    { id: "Adnane", label: "Adnane Ghailan", dorsal: 14}
+    { id: "Nélson Monte", label: "Nélson Monte", dorsal: 20 },
+    { id: "Iker Álvarez", label: "Iker Álvarez", dorsal: 1 },
   ],
 };
