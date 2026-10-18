@@ -1,11 +1,36 @@
 [
-    
+  {
+    "id": 145,
+    "slug": "cordoba-gana-leganes-0-1-eder-porteria-a-cero",
+    "titulo": "El Córdoba gana en Leganés (0-1) con gol de Eder y firma su primera portería a cero",
+    "resumen": "Un gran gol de Eder en el minuto 82 da tres puntos de oro a los blanquiverdes, que dominaron el partido en Butarque y cortan su racha de goles encajados.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2026/10/16/large/db24265b-553b-4537-874c-20dcdaf328ad-155.jpeg",
+    "fecha": "Fri, 16 Oct 2026 21:00:00 GMT",
+    "contenido": "El Córdoba CF ganó este viernes por 0-1 al CD Leganés en el Ontime Butarque (11.102 espectadores), en la jornada 10 de LALIGA Hypermotion. Es una victoria muy importante tras la derrota de la semana anterior en Elda, y además supone la primera portería a cero de la temporada para los de Iván Ania.\n\nEl gol llegó en el minuto 82. Víctor Sánchez robó un balón y Carracedo se fabricó una gran jugada por la derecha para asistir a Eder, que batió a Luca Zidane con un disparo colocado al palo izquierdo. Es el tercer gol del centrocampista esta temporada.\n\nEl triunfo fue justo. El Córdoba fue mejor en la primera parte, sobre todo en el último cuarto de hora, con un disparo de Bri fuera, un buen desborde de Ghailan por la línea de fondo y un remate de Percan alto tras una falta de Carracedo. Tras el descanso tuvo las ocasiones más claras: Percan se plantó solo en el minuto 50, pero Luca Zidane lo detuvo, y el portero local también se lució ante un disparo de Isma Ruiz desde la frontal. El Leganés tuvo unos minutos mejores tras mover el banquillo, pero apenas inquietó la portería de Iker Álvarez.\n\nEn el tramo final entraron Víctor Sánchez y El Jebari, que devolvió peligro por banda, y Ania cerró el partido con los cambios de Théo, Albarrán y Damián. El Leganés, que continúa en mala racha, terminó el encuentro con diez por la expulsión de Morata, que vio la doble amarilla en los últimos minutos.\n\nAlineación del Córdoba: Iker Álvarez; Budesca, Juan Gutiérrez, Álex Martín, Tasende; Isma Ruiz, Eder García, Ghailan; Carracedo, Diego Bri y Percan.",
+    "fuente": "Web oficial Córdoba CF",
+    "url": "https://www.cordobacf.com/noticias/tres-puntos-y-porteria-a-cero-del-cordoba-cf-en-leganes-0-1",
+    "tipo": "post",
+    "destacada": true
+  },
+  {
+    "id": 144,
+    "slug": "previa-leganes-cordoba-butarque-jornada-10",
+    "titulo": "Previa Leganés - Córdoba: duelo de necesitados en Butarque",
+    "resumen": "El Córdoba abre esta noche la jornada 10 en casa de un Leganés en mala racha, con Ania restando urgencia a un partido entre dos equipos de la parte baja.",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    "fecha": "Fri, 16 Oct 2026 09:00:00 GMT",
+    "contenido": "El Córdoba CF visita esta noche (20:30h) al CD Leganés en el Ontime Butarque, en el partido que abre la jornada 10 de LALIGA Hypermotion. Los dos equipos llegan en la parte baja de la tabla: el Leganés es decimosexto con 11 puntos, apenas dos más que los blanquiverdes, que llegan tras perder en Elda en la jornada anterior.\n\nIván Ania quiso rebajar la presión del encuentro: \"hablar de necesidad en la jornada 10 no corresponde\", señaló, recordando lo que queda por delante de temporada. El técnico espera un rival que saldrá a buscar el partido después de sus tres derrotas seguidas. El Leganés, además, es el segundo equipo menos goleador de la categoría, con solo seis tantos en nueve jornadas.\n\nEn el capítulo de bajas, el Córdoba no cuenta con Fomeyem, Jacobo Martí y Adilson, lesionados de larga duración. Según la agencia EFE, tampoco podrá contar con Diarra ni con Kevin Medina. La alineación probable que apunta EFE es: Iker Álvarez; Budesca, Nélson Monte, Rubén Alves y Tasende; Isma Ruiz, Eder García y Ghailan; Diego Bri, Carracedo y Víctor Sánchez.",
+    "fuente": "Cordópolis (elDiario.es) · EFE",
+    "url": "https://cordopolis.eldiario.es/deportes/ccf/ivan-ania-huye-urgencias-butarque-hablar-necesidad-jornada-10-no-corresponde_1_13587663.html",
+    "tipo": "post",
+    "destacada": true
+  },
   {
     "id": 143,
     "slug": "cordoba-convocatoria-viaje-elda-cd-eldense-jornada-9",
     "titulo": "El Córdoba viaja a Elda con la convocatoria ante el CD Eldense",
     "resumen": "Ania ya tiene listos dos porteros y ocho defensas para el duelo del sábado en el Nuevo Pepico Amat, al que el equipo llega tras un viaje de 353 kilómetros.",
-    "imagen": "https://pbs.twimg.com/media/HUMMsx2WYAEwr0G?format=jpg&name=medium",
+    "imagen": "/images/noticias/convocatoria-viaje-eldense.jpg",
     "fecha": "Thu, 08 Oct 2026 12:00:00 GMT",
     "contenido": "El Córdoba CF ya tiene parte de la convocatoria para el partido ante el CD Eldense, correspondiente a la jornada 9 de LALIGA Hypermotion, que se disputará el sábado 10 de octubre en el Nuevo Pepico Amat. El equipo se desplazará hasta Elda en autobús, en un trayecto de 353 kilómetros que el club ha compartido en su plan de viaje.\n\nEn la lista publicada aparecen los porteros Iker y Guilherme, y ocho defensas: Tasende, Álex M., Rubén Alves, Albarrán, Juan Gutiérrez, Egoitz, Budesca y Nélson Monte. Al ser el Eldense un rival distinto al Almería, club que le cedió, Nélson Monte no tiene ya la restricción que le dejó fuera la pasada jornada.",
     "fuente": "Córdoba CF (redes oficiales)",
@@ -13,12 +38,13 @@
     "tipo": "post",
     "destacada": true
   },
-    {
+  {
     "id": 142,
     "slug": "percan-maximo-goleador-vestuario-alegre-eldense",
     "titulo": "Percan, máximo goleador del Córdoba: \"Somos un vestuario alegre\"",
     "resumen": "El delantero, autor del gol ante el Tenerife, destaca el buen ambiente del grupo y ve el duelo en Eldense como una oportunidad para subir en la clasificación.",
-    "imagen": "https://static.eldiario.es/clip/e614bd84-b24f-452c-a3ea-1e7a34753aab_16-9-discover-aspect-ratio_default_0.webp", "fecha": "Tue, 06 Oct 2026 12:00:00 GMT",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
+    "fecha": "Tue, 06 Oct 2026 12:00:00 GMT",
     "contenido": "Diego Percan, actualmente el máximo goleador del Córdoba CF esta temporada, pasó por sala de prensa para analizar el momento del equipo tras la victoria ante el CD Tenerife (3-2), partido en el que marcó. El delantero explicó que se siente cada día más cómodo en el campo y más capaz de demostrar su juego y ayudar al equipo, aunque reconoció que no se fija demasiado en los números y se guía más por sensaciones.\n\nSobre el ambiente del grupo, Percan lo describió como un vestuario alegre, gane o pierda, aunque admitió que cuando el equipo pierde los jugadores están bastante más fastidiados. Tras la victoria ante el Tenerife, el delantero considera que el equipo tiene ahora una buena oportunidad para encadenar dos triunfos seguidos y dar un salto en la clasificación.\n\nEl próximo compromiso es el duelo ante el CD Eldense, que el delantero afronta con la certeza de que es un partido crucial para intentar salir de la zona de peligro.",
     "fuente": "Cordópolis (elDiario.es)",
     "url": "https://cordopolis.eldiario.es/deportes/ccf/diego-percan-ambicion-cordoba-cf-oportunidad-bonita-dar-salto-clasificacion_1_13571767.html",
@@ -30,7 +56,7 @@
     "slug": "cordoba-3-2-tenerife-importante-triunfo-jornada-8",
     "titulo": "Importante triunfo del Córdoba ante el Tenerife (3-2) en un partido de locos",
     "resumen": "Eder, Percan e Isma Ruiz firmaron los goles de una victoria sufrida en El Arcángel, con una roja a Rubén Alves, un error que costó el 2-2 y el gol de la victoria del propio Isma en el minuto 76.",
-    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1BwIHolTc_4Nm7tYUh5Crs3aHvpFxNli5bmzVWs31SA&s=10",
+    "imagen": "https://statics-maker.llt-services.com/cor/images/2025/07/31/large/0c517fa6-48e5-435a-88ea-25e5a7f2e384-41.png",
     "fecha": "Mon, 05 Oct 2026 18:30:00 GMT",
     "contenido": "El Córdoba CF sumó este domingo una victoria de mucho valor en la jornada 8 de LALIGA Hypermotion al imponerse por 3-2 al CD Tenerife en el Nuevo Arcángel, ante 14.455 espectadores, en un encuentro de constantes alternativas que permite al equipo de Iván Ania salir de la zona de descenso.\n\nEl partido arrancó de la mejor manera posible para los blanquiverdes: Eder adelantó al Córdoba en el minuto 3, en una acción que el VAR revisó por un posible fuera de juego que finalmente no se señaló. La alegría duró poco, porque Gomis igualó para el Tenerife en el minuto 16. Pero el Córdoba volvió a ponerse por delante en el 22 con un gol de Percan, culminación de una triangulación en la que participaron Ghailan, Isma Ruiz y Diego Bri.\n\nEl encuentro se complicó antes del descanso, cuando Rubén Alves vio la tarjeta roja directa tras un forcejeo con Enric Gallego, decisión confirmada tras la revisión del VAR. Con diez, el Córdoba resistió hasta que, ya en el minuto 68, Ramos firmó el 2-2 después de un error de Nélson Monte en un centro.\n\nCuando más cuesta arriba parecía el partido, apareció Isma Ruiz: en el minuto 76 sacó un disparo con la izquierda desde la frontal, tras un despeje del Tenerife, que supuso el 3-2 definitivo. El Tenerife se quedó además con diez en el minuto 86 por la expulsión de Juanjo, pero el Córdoba supo sostener el resultado hasta el final.\n\nEn la previa del encuentro, además, el Ayuntamiento de Córdoba rindió homenaje al presidente de honor del club, Rafael Campanero Guzmán, con el nuevo nombre de la calle que rodea el estadio.",
     "fuente": "Web oficial Córdoba CF",
